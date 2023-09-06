@@ -1,0 +1,24 @@
+[{
+        "Id": "RPV120023",
+        "Description": "with valid required information",
+        "Data": [{
+            "PathParams": {
+                "reportId": ""
+            },
+            "QueryParams": {
+                "fileType": "",
+                "includeHeaders": "",
+                "appendDate": "",
+                "deleteAfter": "",
+                "overwrite": "",
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 202,
+                "statusDescription": "Success"
+            }
+        }]
+    }
+]

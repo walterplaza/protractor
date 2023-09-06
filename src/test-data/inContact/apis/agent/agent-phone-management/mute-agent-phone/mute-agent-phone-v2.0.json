@@ -1,0 +1,77 @@
+[
+    {
+        "Id": "AGV20036",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20035",
+        "Description": "with Invalid Query Data",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }            
+        ]
+    },  
+    {
+        "Id": "AGV20037",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },      
+    {
+        "Id": "AGV20038",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20039",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    }    
+]

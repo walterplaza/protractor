@@ -1,0 +1,22 @@
+[
+    {
+        "Id": "AGV120012",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                },
+                "BodyParams": {
+                    "isTyping": true,
+                    "isTextEntered": true
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

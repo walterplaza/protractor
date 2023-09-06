@@ -1,0 +1,70 @@
+[
+    {
+        "Id": "PTV10002",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "chatSession": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "PTV10003",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                    "chatSession": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "PTV10004",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "chatSession": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Chat Session"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "PTV10005",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "chatSession": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Chat Session"
+                }
+            }
+        ]
+    }
+]

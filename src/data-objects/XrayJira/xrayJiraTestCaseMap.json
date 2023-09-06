@@ -1,0 +1,2729 @@
+[
+    {
+        "JiraXray": {
+            "KeyID": "IC-86181",
+            "Sumary": "Impersonate and configure"
+        },
+        "Internal": {
+            "ID": "469642",
+            "Sumary": "Impersonate and configure"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-86184",
+            "Sumary": "Inbound Call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "Inbound Call Agent hangs up call"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-86183",
+            "Sumary": "Create new employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "Create new employee"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-86180",
+            "Sumary": "Create Tenant"
+        },
+        "Internal": {
+            "ID": "449556",
+            "Sumary": "Create Tenant"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-86182",
+            "Sumary": "Outbound call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "Outbound call Agent hangs up call"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62681",
+            "Sumary": "[MAX] [IB] [Email] Verify that when IB Email Non Required Disposition Max Time Limit is over, the agent status change to available"
+        },
+        "Internal": {
+            "ID": "249394",
+            "Sumary": "MAX > Email > Basic Inbound Email Non Required Disposition Max Time Limit"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62622",
+            "Sumary": "[MAX][Email][Disposition] Max Contacts get stuck in acw state - Email - Non-Required Dispo - Allow to timeout without Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62622",
+            "Sumary": "Max Contacts get stuck in acw state - Email -  Non-Required Dispo - Allow to timeout without Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62664",
+            "Sumary": "[MAX][UI][Panel][Resizing Panel] Email IB"
+        },
+        "Internal": {
+            "ID": "294342",
+            "Sumary": "MAX > UI > Panel > Resizing Panel > Email IB"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62675",
+            "Sumary": "[MAX][OB Phone]MAX > Voice - Interactions> Agent with OB Skills Cold Transfer To An External Number"
+        },
+        "Internal": {
+            "ID": "IC-62675",
+            "Sumary": "MAX > Voice - Interactions> Agent with OB Skills Cold Transfer To An External Number"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62672",
+            "Sumary": "[MAX][Transfer] > NWay > Drop Patron > Transfer call with outbound"
+        },
+        "Internal": {
+            "ID": "IC-62672",
+            "Sumary": "[MAX] > NWay > Drop Patron > Transfer call with outbound"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-104198",
+            "Sumary": "[MAX][Glance][Station ID]First option of radio buttons must be selected by default when launching MAX"
+        },
+        "Internal": {
+            "ID": "IC-104198",
+            "Sumary": "MAX-Common > MAX-Phone"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-63024",
+            "Sumary": "[MAX ][Chat][Screen Pops][Panel=On] Verify a Screen Pop form can be opened for Chat Contact"
+        },
+        "Internal": {
+            "ID": "IC-63024",
+            "Sumary": "MAX-Common > Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62672",
+            "Sumary": "[MAX][Transfer] > NWay > Drop Patron > Transfer call with outbound"
+        },
+        "Internal": {
+            "ID": "IC-62672",
+            "Sumary": "[MAX] > NWay > Drop Patron > Transfer call with outbound"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-64395",
+            "Sumary": "[MAX][Chat] Generate a Chat"
+        },
+        "Internal": {
+            "ID": "IC-64395",
+            "Sumary": "[MAX][Chat] Generate a Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-80910",
+            "Sumary": "[MAX] Verify if it possible to add notes to dispositions"
+        },
+        "Internal": {
+            "ID": "IC-80910",
+            "Sumary": "[MAX] Verify if it possible to add notes to dispositions"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-89959",
+            "Sumary": "[MAX] [IC-89323] [IC-90211] [Chat] [Quick Reply] Verify that Insert button is sending the quick reply text to the customer."
+        },
+        "Internal": {
+            "ID": "IC-89959",
+            "Sumary": "[MAX] [IC-89323] [IC-90211] [Chat] [Quick Reply] Verify that Insert button is sending the quick reply text to the customer."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-98651",
+            "Sumary": "[MAX][Email] Verify if it is possible to make a Call when the Email is parked"
+        },
+        "Internal": {
+            "ID": "IC-98651",
+            "Sumary": "[MAX][Email] Verify if it is possible to make a Call when the Email is parked"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-98676",
+            "Sumary": "[MAX][SCH][Email] Verify if it is not possible to make a Call when the Email is not parked"
+        },
+        "Internal": {
+            "ID": "IC-98676",
+            "Sumary": "[MAX][SCH][Email] Verify if it is not possible to make a Call when the Email is not parked"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101965",
+            "Sumary": "[MAX] [IB Mail] [Parked] Validate that Call button on address book is enabled after refesh"
+        },
+        "Internal": {
+            "ID": "IC-101965",
+            "Sumary": "[MAX] [IB Mail] [Parked] Validate that Call button on address book is enabled after refesh"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-102132",
+            "Sumary": "[MAX][SCH][Email] Email parking"
+        },
+        "Internal": {
+            "ID": "IC-102132",
+            "Sumary": "[MAX][SCH][Email] Email parking"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-104266",
+            "Sumary": "[MAX][Email] 'TO' field should maintain the mail filled after change of focus"
+        },
+        "Internal": {
+            "ID": "IC-104266",
+            "Sumary": "[MAX][Email] 'TO' field should maintain the mail filled after change of focus"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-77931",
+            "Sumary": "[MAX][IC-77600][Transfer/Conf] Verify that the panel (screenpop) does not disappears on MAX when an outbound call is placed (Transfer/Conf)."
+        },
+        "Internal": {
+            "ID": "IC-77931",
+            "Sumary": "[MAX][IC-77600][Transfer/Conf] Verify that the panel (screenpop) does not disappears on MAX when an outbound call is placed (Transfer/Conf)."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-100927",
+            "Sumary": "[MAX] [OB Phone] [Hold] [OB Email] Validate that when hold a call agent is able to begin an OB Mail."
+        },
+        "Internal": {
+            "ID": "IC-100927",
+            "Sumary": "[MAX] [OB Phone] [Hold] [OB Email] Validate that when hold a call agent is able to begin an OB Mail."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-100945",
+            "Sumary": "[MAX] [IB Phone] [Hold] [OB Email] Validate that when hold a call agent is able to begin an OB Mail."
+        },
+        "Internal": {
+            "ID": "IC-100945",
+            "Sumary": "[MAX] [IB Phone] [Hold] [OB Email] Validate that when hold a call agent is able to begin an OB Mail."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-103910",
+            "Sumary": "[MAX] [IB] [Phone] Validate that dispositions are not being shown when udpate from dispositions to Automatic Wrap up"
+        },
+        "Internal": {
+            "ID": "IC-103910",
+            "Sumary": "[MAX] [IB] [Phone] Validate that dispositions are not being shown when udpate from dispositions to Automatic Wrap up"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-63489",
+            "Sumary": "[MAX ][Phone][Launch Button][Screen Pops][Panel=Off] Verify a Screen Pop form can be opened for Ib Phone Contact"
+        },
+        "Internal": {
+            "ID": "IC-63489",
+            "Sumary": "[MAX ][Phone][Launch Button][Screen Pops][Panel=Off] Verify a Screen Pop form can be opened for Ib Phone Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-63493",
+            "Sumary": "[MAX ][Phone][Screen Pops][Panel=On] Verify a Screen Pop form can be opened for Ib Phone Contact"
+        },
+        "Internal": {
+            "ID": "IC-63493",
+            "Sumary": "[MAX ][Phone][Screen Pops][Panel=On] Verify a Screen Pop form can be opened for Ib Phone Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62688",
+            "Sumary": "[MAX][Search] Search for custom address book"
+        },
+        "Internal": {
+            "ID": "IC-62688",
+            "Sumary": "[MAX][Search] Search for custom address book"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-88139",
+            "Sumary": "[MAX] [IC-71155] [Address Book] [OSH] [Phone] Validate that while on Call and click on transfer Email button is disabled inside address book"
+        },
+        "Internal": {
+            "ID": "IC-88139",
+            "Sumary": "[MAX] [IC-71155] [Address Book] [OSH] [Phone] Validate that while on Call and click on transfer Email button is disabled inside address book"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-100622",
+            "Sumary": "[MAX][Address Book][All Agents] Team is shown in Agents"
+        },
+        "Internal": {
+            "ID": "IC-100622",
+            "Sumary": "[MAX][Address Book][All Agents] Team is shown in Agents"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-103116",
+            "Sumary": "[MAX][Schedule][ADA=ON] Verify that next and back arrows are displayed on the calendar"
+        },
+        "Internal": {
+            "ID": "IC-103116",
+            "Sumary": "[MAX][Schedule][ADA=ON] Verify that next and back arrows are displayed on the calendar"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-64386",
+            "Sumary": "[MAX][Glance] Launch MAX, refresh and set to Available and Log Out"
+        },
+        "Internal": {
+            "ID": "IC-64386",
+            "Sumary": "[MAX][Glance] Launch MAX, refresh and set to Available and Log Out"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-97744",
+            "Sumary": "[MAX] [Station ID] Validate that using phone number related to Station ID the details of login are being shown on User history."
+        },
+        "Internal": {
+            "ID": "IC-97744",
+            "Sumary": "[MAX] [Station ID] Validate that using phone number related to Station ID the details of login are being shown on User history."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-97790",
+            "Sumary": "[MAX] [Station ID] Validate that on Station History the details of login with Phone number are being shown"
+        },
+        "Internal": {
+            "ID": "IC-97790",
+            "Sumary": "[MAX] [Station ID] Validate that on Station History the details of login with Phone number are being shown"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-100710",
+            "Sumary": "[MAX][Agent Reports][Performance][OB Calls] Show details correctly"
+        },
+        "Internal": {
+            "ID": "IC-100710",
+            "Sumary": "[MAX][Agent Reports][Performance][OB Calls] Show details correctly"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-76333",
+            "Sumary": "[MAX] [Address Book] [Call] Validate that when click on contact button a menu of contact methods available for this person it's being displayed."
+        },
+        "Internal": {
+            "ID": "IC-76333",
+            "Sumary": "[MAX] [Address Book] [Call] Validate that when click on contact button a menu of contact methods available for this person it's being displayed."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-98650",
+            "Sumary": "Generate chat with MAX window maximized"
+        },
+        "Internal": {
+            "ID": "IC-98650",
+            "Sumary": "Generate chat with MAX window maximized"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-100716",
+            "Sumary": "[MAX][Agent Reports][Performance][IB Calls] Show details correctly"
+        },
+        "Internal": {
+            "ID": "IC-100716",
+            "Sumary": "[MAX][Agent Reports][Performance][IB Calls] Show details correctly"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101225",
+            "Sumary": "[MAX Bug][Summer18][IC-21059][IB Phone][With Contact Panels][Panels=Off/On][Digital Contact] Verify the Phone workspace displays visible in its entirety (within ~344 px)"
+        },
+        "Internal": {
+            "ID": "IC-101225",
+            "Sumary": "[MAX Bug][Summer18][IC-21059][IB Phone][With Contact Panels][Panels=Off/On][Digital Contact] Verify the Phone workspace displays visible in its entirety (within ~344 px)"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101226",
+            "Sumary": "[MAX][Summer'18][IC-21061][WI -Without Inbox][Whit ContacPanels] Verify the WI Workspace has the 309 px. and the Contact Panels has the 330 px"
+        },
+        "Internal": {
+            "ID": "IC-101226",
+            "Sumary": "[MAX][Summer'18][IC-21061][WI -Without Inbox][Whit ContacPanels] Verify the WI Workspace has the 309 px. and the Contact Panels has the 330 px"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101227",
+            "Sumary": "MAX>>SCH> Email>Verify the Email work space doesn't split after remove the focus on it and return on it."
+        },
+        "Internal": {
+            "ID": "IC-101227",
+            "Sumary": "MAX>>SCH> Email>Verify the Email work space doesn't split after remove the focus on it and return on it."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101228",
+            "Sumary": "[MAX][Summer '18 added][IC-38619][Chat][With Contact Panels][Non Digital Conta][Without Inbox] Verify the Chat Workspace has the ~309 px. and the Contact Panels has the ~300 px"
+        },
+        "Internal": {
+            "ID": "IC-101228",
+            "Sumary": "[MAX][Summer '18 added][IC-38619][Chat][With Contact Panels][Non Digital Conta][Without Inbox] Verify the Chat Workspace has the ~309 px. and the Contact Panels has the ~300 px"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101229",
+            "Sumary": "[MAX] [SCH] Verify that auto-parked emails can be ended without problems"
+        },
+        "Internal": {
+            "ID": "IC-101229",
+            "Sumary": "[MAX] [SCH] Verify that auto-parked emails can be ended without problems"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101230",
+            "Sumary": "[MAX][Summer'18][IC-21060][IB Email][Without Contact Panels][With Inbox] Verify the IB Email Workspace has the 765 px."
+        },
+        "Internal": {
+            "ID": "IC-101230",
+            "Sumary": "[MAX][Summer'18][IC-21060][IB Email][Without Contact Panels][With Inbox] Verify the IB Email Workspace has the 765 px."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101231",
+            "Sumary": "[MAX][Summer '18 added][IC-38619][Chat][Without Contact Panels][Non Digital Contact][With Inbox] Verify the Chat workspace has the ~435 px."
+        },
+        "Internal": {
+            "ID": "IC-101231",
+            "Sumary": "[MAX][Summer '18 added][IC-38619][Chat][Without Contact Panels][Non Digital Contact][With Inbox] Verify the Chat workspace has the ~435 px."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101232",
+            "Sumary": "[MAX][Summer '18 added][IC-21059][IB Phone][Without Contact Panels][Digital Contact] Verify the IB Phone Workspace has the ~344 px"
+        },
+        "Internal": {
+            "ID": "IC-101232",
+            "Sumary": "[MAX][Summer '18 added][IC-21059][IB Phone][Without Contact Panels][Digital Contact] Verify the IB Phone Workspace has the ~344 px"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101233",
+            "Sumary": "[MAX] [SCH] [IB] [Multi Chat] Generate multi Chats Contacts with Quick Replies"
+        },
+        "Internal": {
+            "ID": "IC-101233",
+            "Sumary": "MAX> SCH> Multi Contact> Generate multi Chats Contacts with Quick Replies"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101234",
+            "Sumary": "[MAX] [SCH] [Multi Contact] [IB] [Chat] Generate multi Chats IB Contact without Quick Replies/ Panels/ Disposition/ Screen Pops, etc."
+        },
+        "Internal": {
+            "ID": "IC-101234",
+            "Sumary": "MAX> SCH> Multi Contact> Generate multi Chats IB Contact without Quick Replies/ Panels/ Disposition/ Screen Pops, etc."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101235",
+            "Sumary": "MAX> SCH> One Contact> Generate a Work Item Contact with Screen Pops and Panels = On"
+        },
+        "Internal": {
+            "ID": "IC-101235",
+            "Sumary": "MAX> SCH> One Contact> Generate a Work Item Contact with Screen Pops and Panels = On"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101236",
+            "Sumary": "MAX> SCH> One Contact> Generate a Work Item Contact with Disposition"
+        },
+        "Internal": {
+            "ID": "IC-101236",
+            "Sumary": "MAX> SCH> One Contact> Generate a Work Item Contact with Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101237",
+            "Sumary": "[MAX] [SCH] [OB] [Phone] Generate a OB Phone Contact with Disposition"
+        },
+        "Internal": {
+            "ID": "IC-101237",
+            "Sumary": "MAX> SCH> One Contact> Generate a OB Phone Contact with Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101238",
+            "Sumary": "MAX> SCH> One Contact> Generate an Work Item Contact with Quick Replies"
+        },
+        "Internal": {
+            "ID": "IC-101238",
+            "Sumary": "MAX> SCH> One Contact> Generate an Work Item Contact with Quick Replies"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101239",
+            "Sumary": "[MAX] [SCH] [IB] [Chat] [One Contact] Generate a IB Chat Contact with Screen Pops and Panels = Off"
+        },
+        "Internal": {
+            "ID": "IC-101239",
+            "Sumary": "MAX> SCH> One Contact> Generate a IB Chat Contact with Screen Pops and Panels = Off"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101240",
+            "Sumary": "[MAX] [SCH] [IB] [Chat] [One Contact] Generate an IB Chat Contact with Quick Replies"
+        },
+        "Internal": {
+            "ID": "IC-101240",
+            "Sumary": "MAX> SCH> One Contact> Generate an IB Chat Contact with Quick Replies"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101242",
+            "Sumary": "[MAX][SCH][OB Email][[One Contact][Interrupt with Digital Contact] Interrupt an Email Ob Contact"
+        },
+        "Internal": {
+            "ID": "IC-101242",
+            "Sumary": "MAX> SCH> One Contact> Interrupt with Digital Contact> Interrupt an Email Ob Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101243",
+            "Sumary": "[MAX][SCH][OB Email][One Contact][Interrupt with Non-Digital contact] Interrupt an Email Ob Contact"
+        },
+        "Internal": {
+            "ID": "IC-101243",
+            "Sumary": "MAX> SCH> One Contact> Interrupt with Non-Digital contact> Interrupt an Email Ob Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101244",
+            "Sumary": "MAX> SCH> One Contact> Interrupt with Digital contact> Interrupt an Email Ib Contact where it doesn't have Quick Replies/ Panels/ Disposition/ Screen Pops, etc."
+        },
+        "Internal": {
+            "ID": "IC-101244",
+            "Sumary": "MAX> SCH> One Contact> Interrupt with Digital contact> Interrupt an Email Ib Contact where it doesn't have Quick Replies/ Panels/ Disposition/ Screen Pops, etc."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101245",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Screen Pops and Panels = On"
+        },
+        "Internal": {
+            "ID": "IC-101245",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Screen Pops and Panels = On"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101246",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Screen Pops and Panels = Off"
+        },
+        "Internal": {
+            "ID": "IC-101246",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Screen Pops and Panels = Off"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101247",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Disposition"
+        },
+        "Internal": {
+            "ID": "IC-101247",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101252",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Quick Replies"
+        },
+        "Internal": {
+            "ID": "IC-101252",
+            "Sumary": "MAX> SCH> One Contact> Generate an Email Ib Contact with Quick Replies"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101253",
+            "Sumary": "[MAX] [OB] [Phone] [Address Book] [Call History] Verify the 'CallHistory' tab contains a history of calls made by the agent and you can use one historial for generate an OB Phone Contact."
+        },
+        "Internal": {
+            "ID": "IC-101253",
+            "Sumary": "Address Book> MAX> Other> Call History> Verify the 'CallHistory' tab contains a history of calls made by the agent and you can use one historial for generate an OB Phone Contact."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101254",
+            "Sumary": "[MAX] Parked email unselectable Reply then unpark"
+        },
+        "Internal": {
+            "ID": "IC-101254",
+            "Sumary": "[MAX] Parked email unselectable Reply then unpark"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101255",
+            "Sumary": "[MAX] Parked email unselectable"
+        },
+        "Internal": {
+            "ID": "IC-101255",
+            "Sumary": "[MAX] Parked email unselectable"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101256",
+            "Sumary": "MAX>Dispositions>reports"
+        },
+        "Internal": {
+            "ID": "IC-101256",
+            "Sumary": "MAX>Dispositions>reports"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101257",
+            "Sumary": "[MAX] [Glance][Schedule] New commitments are displayed in a chronological list"
+        },
+        "Internal": {
+            "ID": "IC-101257",
+            "Sumary": "[MAX] [Glance][Schedule] New commitments are displayed in a chronological list"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101258",
+            "Sumary": "MAX> Email> Quick Replies> Verify the 'Insert' button is not displayed when the Email is in read mode or parking mode"
+        },
+        "Internal": {
+            "ID": "IC-101258",
+            "Sumary": "MAX> Email> Quick Replies> Verify the 'Insert' button is not displayed when the Email is in read mode or parking mode"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101259",
+            "Sumary": "MAX>Work Item>Transfer>Search for people and skills"
+        },
+        "Internal": {
+            "ID": "IC-101259",
+            "Sumary": "MAX>Work Item>Transfer>Search for people and skills"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101260",
+            "Sumary": "MAX>Parked emails don't persist"
+        },
+        "Internal": {
+            "ID": "IC-101260",
+            "Sumary": "MAX>Parked emails don't persist"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101261",
+            "Sumary": "[MAX] [IB] [Phone] [Disposition] Verify that Max Contacts not get stuck in acw state - Phone - Non-Required Dispo - Allow to timeout without Dispo"
+        },
+        "Internal": {
+            "ID": "IC-101261",
+            "Sumary": "Max Contacts get stuck in acw state - Phone - Non-Required Dispo - Allow to timeout without Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101262",
+            "Sumary": "[MAX] [IB] [Phone] [Dispositions] Verify that Max Contacts not get stuck in acw state - Phone - Non-Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-101262",
+            "Sumary": "Max Contacts get stuck in acw state - Phone - Non-Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101263",
+            "Sumary": "MAX> WI> Screen Pop> Panel = on> WI Contacts with screen pops must be opened upon delivery to the agent"
+        },
+        "Internal": {
+            "ID": "IC-101263",
+            "Sumary": "MAX> WI> Screen Pop> Panel = on> WI Contacts with screen pops must be opened upon delivery to the agent"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101264",
+            "Sumary": "[MAX] [Chat] [Panles=On] Verify that Chat Contacts with screen pops (and panels enabled) open upon delivery to the agent"
+        },
+        "Internal": {
+            "ID": "IC-101264",
+            "Sumary": "MAX > Chat Contacts with screen pops (and panels enabled) are not open upon delivery to the agent"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101265",
+            "Sumary": "[Chat] Chat screens_Verify max width for both the agent and customer chat bubbles"
+        },
+        "Internal": {
+            "ID": "IC-101265",
+            "Sumary": "[Chat] Chat screens_Verify max width for both the agent and customer chat bubbles"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101266",
+            "Sumary": "PC > Skill > General Settings > Verify 'MaximumWaitTimetoConsider' accepts only integer values between 0 and 999"
+        },
+        "Internal": {
+            "ID": "IC-101266",
+            "Sumary": "PC > Skill > General Settings > Verify 'MaximumWaitTimetoConsider' accepts only integer values between 0 and 999"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101267",
+            "Sumary": "[MAX] [Multi Chat] Chat Buttons Per Patron"
+        },
+        "Internal": {
+            "ID": "IC-101267",
+            "Sumary": "MAX>Multi Chat>Chat Buttons Per Patron"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101268",
+            "Sumary": "[MAX] [Multi Chat] Verify Accept/Reject options"
+        },
+        "Internal": {
+            "ID": "IC-101268",
+            "Sumary": "MAX>Multi Chat>Accept/Reject options"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101269",
+            "Sumary": "MAX>Chat Interface>Updated Disposition Check Box"
+        },
+        "Internal": {
+            "ID": "IC-101269",
+            "Sumary": "MAX>Chat Interface>Updated Disposition Check Box"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101270",
+            "Sumary": "[MAX] [Chat] Verify Agent copy/paste from Notepad displays in Agent window without HTML tags"
+        },
+        "Internal": {
+            "ID": "IC-101270",
+            "Sumary": "MAX > Chat > Agent copy/paste from Notepad displays in Agent window without HTML tags"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101271",
+            "Sumary": "MAX > Schedules Commitments > Verify that a Commintment can be create and removed using the Settings of Delete Commitments"
+        },
+        "Internal": {
+            "ID": "IC-101271",
+            "Sumary": "MAX > Schedules Commitments > Verify that a Commintment can be create and removed using the Settings of Delete Commitments"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101272",
+            "Sumary": "MAX > Email Inbox > Parking disabled"
+        },
+        "Internal": {
+            "ID": "IC-101272",
+            "Sumary": "MAX > Email Inbox > Parking disabled"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101273",
+            "Sumary": "[MAX] [IB] [Phone] Verify that IB Call made is displayed in Contact history."
+        },
+        "Internal": {
+            "ID": "IC-101273",
+            "Sumary": "MAX > Call back from Dispostion (inbound)"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101274",
+            "Sumary": "[MAX] [OB] [Phone] Verify that Calls made are dispayed in Contact History in Main Panel"
+        },
+        "Internal": {
+            "ID": "IC-101274",
+            "Sumary": "MAX > Call back from Dispostion (outbound)"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101275",
+            "Sumary": "MAX > Agent Reports > Productivity > Today > Request time and result"
+        },
+        "Internal": {
+            "ID": "IC-101275",
+            "Sumary": "MAX > Agent Reports > Productivity > Today > Request time and result"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101276",
+            "Sumary": "MAX > Agent Reports > Productivity > API time changes"
+        },
+        "Internal": {
+            "ID": "IC-101276",
+            "Sumary": "MAX > Agent Reports > Productivity > API time changes"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101277",
+            "Sumary": "[MAX] [OB] [Phone] [Panel] [Resizing Panel] Verify that Panel Resizes when contact is routed to agent."
+        },
+        "Internal": {
+            "ID": "IC-101277",
+            "Sumary": "MAX > UI > Panel > Resizing Panel > Voice OB"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101278",
+            "Sumary": "MAX > Unparked Email in Personal Queue > Click Yes on Requeue Message"
+        },
+        "Internal": {
+            "ID": "IC-101278",
+            "Sumary": "MAX > Unparked Email in Personal Queue > Click Yes on Requeue Message"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101279",
+            "Sumary": "MAX > Unparked Email in Personal Queue > Click NO"
+        },
+        "Internal": {
+            "ID": "IC-101279",
+            "Sumary": "MAX > Unparked Email in Personal Queue > Click NO"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101280",
+            "Sumary": "[MAX - Email Inbox] E-mail Inbox Settings, View and Sort >Verify that The Email Inbox will be default sorted by Date/Time"
+        },
+        "Internal": {
+            "ID": "IC-101280",
+            "Sumary": "[MAX - Email Inbox] E-mail Inbox Settings, View and Sort >Verify that The Email Inbox will be default sorted by Date/Time"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101281",
+            "Sumary": "MAX > Email > Park Multiples Emails and see items in Glance View"
+        },
+        "Internal": {
+            "ID": "IC-101281",
+            "Sumary": "MAX > Email > Park Multiples Emails and see items in Glance View"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101282",
+            "Sumary": "[MAX - Personal Queue] Personal Queue when there is a Commitment"
+        },
+        "Internal": {
+            "ID": "IC-101282",
+            "Sumary": "[MAX - Personal Queue] Personal Queue when there is a Commitment"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101283",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - disposition email"
+        },
+        "Internal": {
+            "ID": "IC-101283",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - disposition email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101284",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - disposition call"
+        },
+        "Internal": {
+            "ID": "IC-101284",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - disposition call"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101285",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - disposition email"
+        },
+        "Internal": {
+            "ID": "IC-101285",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - disposition email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101286",
+            "Sumary": "MAX > Email > Outbound email interrupted by call after minimum work time setting"
+        },
+        "Internal": {
+            "ID": "IC-101286",
+            "Sumary": "MAX > Email > Outbound email interrupted by call after minimum work time setting"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101287",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - save reply draft progress, discard"
+        },
+        "Internal": {
+            "ID": "IC-101287",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - save reply draft progress, discard"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101289",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - save reply draft progress and send"
+        },
+        "Internal": {
+            "ID": "IC-101289",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - save reply draft progress and send"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101302",
+            "Sumary": "[MAX][Chat Interactions] [ACW] Verify that ACW timer increasing"
+        },
+        "Internal": {
+            "ID": "IC-101302",
+            "Sumary": "MAX > Chat Interactions > ACW > ACW timer increasing"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101290",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - save reply draft progress"
+        },
+        "Internal": {
+            "ID": "IC-101290",
+            "Sumary": "MAX > Email > Outbound email interrupted by call - save reply draft progress"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101292",
+            "Sumary": "51/5000 MAX > Schedules Commitments > Verify when the cursor is hovering over on the Commitment, the white background changes to gray and a tool tips displays the full name of respective field."
+        },
+        "Internal": {
+            "ID": "IC-101292",
+            "Sumary": "51/5000 MAX > Schedules Commitments > Verify when the cursor is hovering over on the Commitment, the white background changes to gray and a tool tips displays the full name of respective field."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101294",
+            "Sumary": "MAX > Schedules Commitments > Verify the Commitments are sorted according the Date scheduled"
+        },
+        "Internal": {
+            "ID": "IC-101294",
+            "Sumary": "MAX > Schedules Commitments > Verify the Commitments are sorted according the Date scheduled"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101295",
+            "Sumary": "MAX > Email Interactions > Outbound > Quick Reply for email > Verify that the agent must be able to add quick reply by clicking the quick reply button"
+        },
+        "Internal": {
+            "ID": "IC-101295",
+            "Sumary": "MAX > Email Interactions > Outbound > Quick Reply for email > Verify that the agent must be able to add quick reply by clicking the quick reply button"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101296",
+            "Sumary": "MAX > Email > Reply to an Inbound Email with an empty email body"
+        },
+        "Internal": {
+            "ID": "IC-101296",
+            "Sumary": "MAX > Email > Reply to an Inbound Email with an empty email body"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101297",
+            "Sumary": "MAX > Email > Reply to an Inbound Email"
+        },
+        "Internal": {
+            "ID": "IC-101297",
+            "Sumary": "MAX > Email > Reply to an Inbound Email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101298",
+            "Sumary": "[MAX][Chat] Generate a Chat"
+        },
+        "Internal": {
+            "ID": "IC-101298",
+            "Sumary": "MAX> Chat> IB Chat> Generate a Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101299",
+            "Sumary": "MAX > Agent Reports > Agent Reports panel layout - Assigned Skills ui"
+        },
+        "Internal": {
+            "ID": "IC-101299",
+            "Sumary": "MAX > Agent Reports > Agent Reports panel layout - Assigned Skills ui"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-101300",
+            "Sumary": "MAX > Agent Reports > Agent Reports panel layout - Productivity ui"
+        },
+        "Internal": {
+            "ID": "IC-101300",
+            "Sumary": "MAX > Agent Reports > Agent Reports panel layout - Productivity ui"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62644",
+            "Sumary": "[MAX] [CHAT] - Multi-Chat when reject chats after accept the first this back to queue of chats."
+        },
+        "Internal": {
+            "ID": "IC-62644",
+            "Sumary": "MAX > Multi-Chat reject chat "
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62582",
+            "Sumary": "[MAX] [Chat] [Multichat] - Launch Button highlights them all"
+        },
+        "Internal": {
+            "ID": "IC-62582",
+            "Sumary": "[MAX] Launch Button highlights them all"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62643",
+            "Sumary": "[MAX] [CHAT] Validate that when Chat times out, the Agent status is set to 'UNAVAILABLE Refused."
+        },
+        "Internal": {
+            "ID": "IC-62643",
+            "Sumary": "MAX > Chat times out"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62608",
+            "Sumary": "[MAX] [IB] [Chat] Validate that Accept reject border is transparent - Chat"
+        },
+        "Internal": {
+            "ID": "IC-62608",
+            "Sumary": "[MAX] Accept reject border is transparent - Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62614",
+            "Sumary": "[MAX][Chat][ADA = on] Chat start time is visible when high contrast ADA is on"
+        },
+        "Internal": {
+            "ID": "IC-62614",
+            "Sumary": "MAX>ADA = on>Chat start time is visible when high contrast ADA is on"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62580",
+            "Sumary": "US 435866-[Max] [Agent] [Information] - Validate Phone Number is displayed correctly under Agent Leg 'Information' pop up"
+        },
+        "Internal": {
+            "ID": "IC-62580",
+            "Sumary": "US 435866-Max Agent- Validate Phone Number is displayed correctly under Agent Leg 'Information' pop up"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62633",
+            "Sumary": "[MAX][SCH][Contextual Panel] quick replies Should wrap text"
+        },
+        "Internal": {
+            "ID": "IC-62633",
+            "Sumary": "MAX>Contextual Panel>quick replies Should wrap text"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62649",
+            "Sumary": "[MAX][Multi Chat] Accept/Reject in Unavailable"
+        },
+        "Internal": {
+            "ID": "IC-62649",
+            "Sumary": "MAX>Multi Chat>Accept/Reject in Unavailable"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62650",
+            "Sumary": "[MAX][Chat Interface]Updated bubble UI"
+        },
+        "Internal": {
+            "ID": "IC-62650",
+            "Sumary": "MAX>Chat Interface>Updated bubble UI"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62642",
+            "Sumary": "[MAX][SCH] customer contact card icon loading icon in empty placeholder ."
+        },
+        "Internal": {
+            "ID": "IC-62642",
+            "Sumary": "[MAX] SCH > customer contact card icon loading icon in empty placeholder ."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62631",
+            "Sumary": "[MAX][Disposition] Can't tell when you select an item in Disposition Window"
+        },
+        "Internal": {
+            "ID": "IC-62631",
+            "Sumary": "[MAX] : Can't tell when you select an item in Disposition Window"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62651",
+            "Sumary": "[MAX] [Multi Chat] Validate that when chats time out, the chats are closed and no others are displayed."
+        },
+        "Internal": {
+            "ID": "IC-62651",
+            "Sumary": "MAX>Multi Chat>Glance View Notification"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62640",
+            "Sumary": "[MAX][SCH][CHAT] chat in personal queue 'from address' is visible in glance preview"
+        },
+        "Internal": {
+            "ID": "IC-62640",
+            "Sumary": "[SCH][CHAT][MAX] chat in personal queue 'fromaddress' is visible in glance preview"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62654",
+            "Sumary": "[MAX][Chat] UI after refresh MAX"
+        },
+        "Internal": {
+            "ID": "IC-62654",
+            "Sumary": "[MAX] Chat UI update TC"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62685",
+            "Sumary": "[MAX][Chat] Happy Path accept chat with disposition"
+        },
+        "Internal": {
+            "ID": "IC-62685",
+            "Sumary": "MAX > Chat Happy Path accept chat with disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62674",
+            "Sumary": "[MAX][Quick Replies]Quicky reply> Keywords with associated QR to be seen for Chats"
+        },
+        "Internal": {
+            "ID": "IC-62674",
+            "Sumary": "Quicky reply> Keywords with associated QR to be seen for Chats"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62641",
+            "Sumary": "[Max] [Information] - Verify Data displayed on Information pane about agent"
+        },
+        "Internal": {
+            "ID": "IC-62641",
+            "Sumary": "Max>Information>Verify Data displayed on Information  pane about agent"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62628",
+            "Sumary": "[MAX][Chat][Disposition] Max Contacts get stuck in acw state - Chat - Closed by Agent - Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62628",
+            "Sumary": "Max Contacts get stuck in acw state - Chat - Closed by Agent - Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62687",
+            "Sumary": "[MAX][Chat]MAX> Personal Queue> Chat> Personal Queue IB Chat"
+        },
+        "Internal": {
+            "ID": "IC-62687",
+            "Sumary": "MAX> Personal Queue> Chat> Personal Queue IB Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62632",
+            "Sumary": "[MAX][Chat] Cannot select text in UI to copy and paste from chat."
+        },
+        "Internal": {
+            "ID": "IC-62632",
+            "Sumary": "MAX Cannot select text in UI to copy and paste from chat."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62583",
+            "Sumary": "[MAX] [Chat] Validate that Chat workspace it's being displayed when its accepted."
+        },
+        "Internal": {
+            "ID": "IC-62583",
+            "Sumary": "MAX Accept Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62590",
+            "Sumary": "[MAX] [Glance] [Event Log] Validate that the Event log is Cleared when click on 'Clear' button."
+        },
+        "Internal": {
+            "ID": "IC-62590",
+            "Sumary": "MAX Clear Event Log"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62584",
+            "Sumary": "[MAX] [Glance] [More] - Validate that Help option it's being displayed."
+        },
+        "Internal": {
+            "ID": "IC-62584",
+            "Sumary": "MAX Launch Help"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62586",
+            "Sumary": "[MAX] [Glance] [More] [Event Log] Validate that Event Log it's being displayed."
+        },
+        "Internal": {
+            "ID": "IC-62586",
+            "Sumary": "MAX More Event Log"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62593",
+            "Sumary": "[MAX] [Agent] Set Available"
+        },
+        "Internal": {
+            "ID": "IC-62593",
+            "Sumary": "MAX Set Available"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62587",
+            "Sumary": "[MAX] [Glance] [More] [Information] Validate that More - Information it's being displayed"
+        },
+        "Internal": {
+            "ID": "IC-62587",
+            "Sumary": "MAX More Information"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62615",
+            "Sumary": "[OSH] [MAX] [Chat] [Disposition] [Note] It must possible to write in “Note” field from “Disposition Dialog” in Chat Contact"
+        },
+        "Internal": {
+            "ID": "IC-62615",
+            "Sumary": "MCH> MAX> Chat> Disposition> Note> It must possible to write in “Note” field from “Disposition Dialog” in Chat Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62695",
+            "Sumary": "[MAX][Chat Interactions][ACW] After ending chat, agent state should be ACW disposition"
+        },
+        "Internal": {
+            "ID": "IC-62695",
+            "Sumary": "MAX > Chat Interactions > ACW > After ending chat, agent state should be ACW disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62694",
+            "Sumary": "[MAX][Chat Interactions][ACW] Agent state should be changed to next state, after select a disposition and click on finish button"
+        },
+        "Internal": {
+            "ID": "IC-62694",
+            "Sumary": "MAX > Chat Interactions > ACW > After expiration of ACW time, agent state should be changed to next state"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62693",
+            "Sumary": "[MAX][Chat Interactions][ACW] Agent can change state from ACW and all chat controls should be removed"
+        },
+        "Internal": {
+            "ID": "IC-62693",
+            "Sumary": "MAX > Chat Interactions > ACW > Agent can change state from ACW before time is over"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62611",
+            "Sumary": "[MAX] [Chat] [Multichat] Randomly resizes when handling multiple chats and you reply back"
+        },
+        "Internal": {
+            "ID": "IC-62611",
+            "Sumary": "[MAX] Randomly resizes when handling multiple chats and you reply back"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62636",
+            "Sumary": "[MAX][OSH][ADA][Chat] Continue chatting after changing ADA configuration"
+        },
+        "Internal": {
+            "ID": "IC-62636",
+            "Sumary": "[MAX] Omnichannel - Continue chatting after changing ADA configuration"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62609",
+            "Sumary": "[MAX] [IB] [Chat] The omni workspaces do not correctly position accept/reject contact window. Chat"
+        },
+        "Internal": {
+            "ID": "IC-62609",
+            "Sumary": "[MAX] The omni workspaces do not correctly position accept/reject contact window. Chat"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62664",
+            "Sumary": "[MAX][UI][Panel][Resizing Panel] Email IB"
+        },
+        "Internal": {
+            "ID": "IC-62664",
+            "Sumary": "MAX > UI > Panel > Resizing Panel > Email IB"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62579",
+            "Sumary": "[MAX][Resize] Email inbox minimums"
+        },
+        "Internal": {
+            "ID": "IC-62579",
+            "Sumary": "[MAX][Resize] Email inbox minimums"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62663",
+            "Sumary": "[MAX] [Email] [Reply] Validate that when Copy&Paste from email reply no additonal formatting information is included."
+        },
+        "Internal": {
+            "ID": "IC-62663",
+            "Sumary": "MAX > Email > Reply > Copy&Paste email reply"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62607",
+            "Sumary": "[MAX] [IB] [Email] Validate that Accept / reject border is transparent - Email"
+        },
+        "Internal": {
+            "ID": "IC-62607",
+            "Sumary": "[MAX] Accept reject border is transparent - Email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62668",
+            "Sumary": "[MAX] Verify that the agent state in the Glance View shows the time HH:MM:SS and change to MM:SS for ACW state"
+        },
+        "Internal": {
+            "ID": "IC-62668",
+            "Sumary": "[MAX] Change Agent State timer from Minutes to Seconds> Verify that the agent state in the Glance View shows the time HH:MM:SS starting in MM:SS for ACW state"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62667",
+            "Sumary": "[MAX] - Verify that the timer in the glace for ACW state is correct with Required Disposition in format MM:SS"
+        },
+        "Internal": {
+            "ID": "IC-62667",
+            "Sumary": "[MAX] Change Agent State timer from Minutes to Seconds> Verify that the timer in the glace for ACW state is correct with Required Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62626",
+            "Sumary": "[MAX] [IB] [Email][Disposition] Max Contacts get stuck in acw state - Email - Non-Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62626",
+            "Sumary": "Max Contacts get stuck in acw state - Email - Non-Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62629",
+            "Sumary": "[MAX][Email][Disposition]Max Contacts get stuck in acw state - Email - Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62629",
+            "Sumary": "Max Contacts get stuck in acw state - Email  - Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62678",
+            "Sumary": "[MAX][Email] Forward Basic Inbound Email Invalid"
+        },
+        "Internal": {
+            "ID": "IC-62678",
+            "Sumary": "MAX > Email > Forward Basic Inbound Email Invalid"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62620",
+            "Sumary": "[MAX][IB][Email][Disposition] Verify that agent is able to complete disposition contact"
+        },
+        "Internal": {
+            "ID": "IC-62620",
+            "Sumary": "Email > Disposition > Not able to disposition contact - Required Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62624",
+            "Sumary": "[MAX][Email][Disposition] Max Contacts get stuck in acw state - Email - Forward the email- Non-Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62624",
+            "Sumary": "Max Contacts get stuck in acw state - Email - Forward the email- Non-Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62622",
+            "Sumary": "[MAX][Email][Disposition] Max Contacts get stuck in acw state - Email - Non-Required Dispo - Allow to timeout without Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62622",
+            "Sumary": "Max Contacts get stuck in acw state - Email -  Non-Required Dispo - Allow to timeout without Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62686",
+            "Sumary": "[MAX][Email]MAX> Personal Queue> Email> Personal Queue IB Email"
+        },
+        "Internal": {
+            "ID": "IC-62686",
+            "Sumary": "MAX> Personal Queue> Email> Personal Queue IB Email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62639",
+            "Sumary": "[MAX][SCH][Emails] Parked emails should not lose their icons when you click through"
+        },
+        "Internal": {
+            "ID": "IC-62639",
+            "Sumary": "[MAX][SCH]>Emails> Parked emails should not lose their icons when you click through"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62619",
+            "Sumary": "Email > Disposition > Not able to disposition contact - Optional Disposition"
+        },
+        "Internal": {
+            "ID": "IC-62619",
+            "Sumary": "Email > Disposition > Not able to disposition contact - Optional Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62676",
+            "Sumary": "[MAX][Email] Forward Basic Inbound Email Discard"
+        },
+        "Internal": {
+            "ID": "IC-62676",
+            "Sumary": "MAX > Email > Forward Basic Inbound Email Discard"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62689",
+            "Sumary": "[MAX][Email]MAX > Email Interactions > Inbound > Forward > Quick Reply for email > Verify that the agent must be able to add quick reply by clicking the quick reply button"
+        },
+        "Internal": {
+            "ID": "IC-62689",
+            "Sumary": "MAX > Email Interactions > Inbound > Forward > Quick Reply for email > Verify that the agent must be able to add quick reply by clicking the quick reply button"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62683",
+            "Sumary": "[MAX][Email]MAX > Email > Basic Inbound Email Required Disposition"
+        },
+        "Internal": {
+            "ID": "IC-62683",
+            "Sumary": "MAX > Email > Basic Inbound Email Required Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62682",
+            "Sumary": "[MAX][Email]MAX > Email > Basic Inbound Email Non Required Disposition"
+        },
+        "Internal": {
+            "ID": "IC-62682",
+            "Sumary": "MAX > Email > Basic Inbound Email Non Required Disposition"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62681",
+            "Sumary": "[MAX] [IB] [Email] Verify that when IB Email Non Required Disposition Max Time Limit is over, the agent status change to available"
+        },
+        "Internal": {
+            "ID": "IC-62681",
+            "Sumary": "MAX > Email > Basic Inbound Email Non Required Disposition Max Time Limit"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62577",
+            "Sumary": "[MAX][SCH][Email Ib] Verify the email reply box is not resizable and is encoding specific characters and the edit controls are displayed on it."
+        },
+        "Internal": {
+            "ID": "IC-62577",
+            "Sumary": "MAX> SCH> Email Ib> Verify the email reply box is not resizable and is encoding specific characters and the edit controls are displayed on it."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62599",
+            "Sumary": "[MAX] [Email] Verify Email Replies and Forward options"
+        },
+        "Internal": {
+            "ID": "IC-62599",
+            "Sumary": "[MAX] [Email] Email replies options"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62635",
+            "Sumary": "[MAX][OSH][OB Email] UI - Disabled Transfer button on OB email"
+        },
+        "Internal": {
+            "ID": "IC-62635",
+            "Sumary": "[MAX] Omnichannel UI - Disabled Transfer button on OB email"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62630",
+            "Sumary": "[MAX][Email Client] Font Family, Font Sizes, Other Font Features"
+        },
+        "Internal": {
+            "ID": "IC-62630",
+            "Sumary": "MAX > Email Client > Font Family, Font Sizes, Other Font Features"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62621",
+            "Sumary": "[MAX][OSH][Email] Email body displays their content when is received and when is replied"
+        },
+        "Internal": {
+            "ID": "IC-62621",
+            "Sumary": "MCH> MAX> Email> Email body displays their content when is received and when is replied"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62597",
+            "Sumary": "[MAX] [Voice Mail] Verify that when Voice mail is active the right side is not missing information."
+        },
+        "Internal": {
+            "ID": "IC-62597",
+            "Sumary": "[MAX] Voice mails appear cut off"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62623",
+            "Sumary": "[MAX][Voicemail][Disposition] Max Contacts get stuck in acw state - Voicemail - Non-Required Dispo - Allow to timeout without Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62623",
+            "Sumary": "Max Contacts get stuck in acw state - Voicemail -  Non-Required Dispo - Allow to timeout without Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62625",
+            "Sumary": "[MAX][Voicemail][Disposition]Max Contacts get stuck in acw state - Voicemail - Non-Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62625",
+            "Sumary": "Max Contacts get stuck in acw state - Voicemail -  Non-Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62627",
+            "Sumary": "[MAX][Voicemail][Disposition] Max Contacts get stuck in acw state - Voicemail - Required Dispo"
+        },
+        "Internal": {
+            "ID": "IC-62627",
+            "Sumary": "Max Contacts get stuck in acw state - Voicemail - Required Dispo"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62690",
+            "Sumary": "[MAX][Failiover]MAX > Failover - Voicemail"
+        },
+        "Internal": {
+            "ID": "IC-62690",
+            "Sumary": "MAX > Failover - Voicemail"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62692",
+            "Sumary": "[MAX][Voice Mail][HappyPath] Generate an IB Voice Mail contact."
+        },
+        "Internal": {
+            "ID": "IC-62692",
+            "Sumary": "Check Voicemail"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62594",
+            "Sumary": "[MAX] [Voice Mail] [Transfer] Transfer to skills"
+        },
+        "Internal": {
+            "ID": "IC-62594",
+            "Sumary": "[MAX] Transfer to skills"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62613",
+            "Sumary": "[MAX] [OB] [Phone] [Schedule] Setting machine's time zone is the same MAX' time zone"
+        },
+        "Internal": {
+            "ID": "IC-62613",
+            "Sumary": "[MAX] [OB] [Phone] [Schedule] Setting machine's time zone is the same MAX' time zone"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62656",
+            "Sumary": "[MAX][Schedule Commitment] Look for + symbol"
+        },
+        "Internal": {
+            "ID": "IC-62656",
+            "Sumary": "Max> Schedule Commitment> Look for + symbol"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62598",
+            "Sumary": "[MAX] [IB] [Phone] [Tool Bar] [Launch Button] Verify in IB Phone Contact, the Launch Button is displayed active."
+        },
+        "Internal": {
+            "ID": "IC-62598",
+            "Sumary": "MAX>Tool Bar> Launch Button> Verify in IB Phone Contact, the Launch Button is displayed active."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62596",
+            "Sumary": "[MAX] [Phone] Verify the Phone workspace doesn't resize too large upon ending contact"
+        },
+        "Internal": {
+            "ID": "IC-62596",
+            "Sumary": "MAX> Phone> Verify the Phone workspace doesn't resize too large upon ending contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62665",
+            "Sumary": "[MAX][IE][Address book] Address book entries are displayed as expected"
+        },
+        "Internal": {
+            "ID": "IC-62665",
+            "Sumary": "MAX>IE>Address book entries not showing up initially when searching for contacts in Max History."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62662",
+            "Sumary": "[MAX][Glance][History] Cleared with refresh/close"
+        },
+        "Internal": {
+            "ID": "IC-62662",
+            "Sumary": "MAX > Call back from Dispostion > Cleared with refresh/close"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62581",
+            "Sumary": "US 435866- [Max] [Agent] -Validate Phone Number field in 'Phone Number or Station ID' pop up is able to accept only maximum of 30 characters"
+        },
+        "Internal": {
+            "ID": "IC-62581",
+            "Sumary": "US 435866-Max Agent-Validate Phone Number field in 'Phone Number or Station ID' pop up is able to accept only  maximum of 30 characters"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62660",
+            "Sumary": "[MAX][Commitment] UI verification"
+        },
+        "Internal": {
+            "ID": "IC-62660",
+            "Sumary": "MAX > Commitment > UI verification"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62604",
+            "Sumary": "[MAX] [Phone] [ADA] Launch is offset in ADA high contrast"
+        },
+        "Internal": {
+            "ID": "IC-62604",
+            "Sumary": "[MAX] Launch is offset in ADA high contrast"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62603",
+            "Sumary": "[MAX] [IB] [Phone] [ACW] [Wrap Up] Verify that when end the IB call No save button it's being displayed"
+        },
+        "Internal": {
+            "ID": "IC-62603",
+            "Sumary": "[MAX] Save close appears upon contact ending"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62657",
+            "Sumary": "[MAX][After Call Work][Disposition not required] No disposition timer is displayed for contacts that have no required disposition"
+        },
+        "Internal": {
+            "ID": "IC-62657",
+            "Sumary": "MAX > After Call Work > Dispostion not required > Timer"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62669",
+            "Sumary": "[MAX] [OB] [Phone] Verify that when Valid Number is used no toast pop is displayed."
+        },
+        "Internal": {
+            "ID": "IC-62669",
+            "Sumary": "[MAX] Valid Number"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62670",
+            "Sumary": "[MAX] Bad Number Notification"
+        },
+        "Internal": {
+            "ID": "IC-62670",
+            "Sumary": "[MAX] Bad Number Notification"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62673",
+            "Sumary": "[MAX][NWay] Drop patron from Conference and retain call with others"
+        },
+        "Internal": {
+            "ID": "IC-62673",
+            "Sumary": "[MAX] > NWay > Drop patron from Conference and retain call with others"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62666",
+            "Sumary": "[MAX] Ending Conference Call after Patron is dropped> Verify that all other functions in conference (transfer to agent, etc.) continue to work as designed"
+        },
+        "Internal": {
+            "ID": "IC-62666",
+            "Sumary": "[MAX] Ending Conference Call after Patron is dropped> Verify that all other functions in conference (transfer to agent, etc.) continue to work as designed"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62672",
+            "Sumary": "[MAX][Transfer] > NWay > Drop Patron > Transfer call with outbound"
+        },
+        "Internal": {
+            "ID": "IC-62672",
+            "Sumary": "[MAX] > NWay > Drop Patron > Transfer call with outbound"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62671",
+            "Sumary": "[MAX][Conference] > NWay > Multi-party Conference >Hang up call doesn't end other conversations"
+        },
+        "Internal": {
+            "ID": "IC-62671",
+            "Sumary": "[MAX] > NWay > Multi-party Conference >Hang up call doesn't end other conversations"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62691",
+            "Sumary": "[MAX][Agent Report]MAX > Agent Reports > Agent Reports panel layout - Performance ui"
+        },
+        "Internal": {
+            "ID": "IC-62691",
+            "Sumary": "MAX > Agent Reports > Agent Reports panel layout - Performance ui"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62688",
+            "Sumary": "[MAX][Search] Search for custom address book"
+        },
+        "Internal": {
+            "ID": "IC-62688",
+            "Sumary": "MAX > Search > Search for custom address book"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62591",
+            "Sumary": "[MAX] [IB] [Phone] Validate that IB Phone Call it's displayed in Skill Queue."
+        },
+        "Internal": {
+            "ID": "IC-62591",
+            "Sumary": "MAX IB Phone Call"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62592",
+            "Sumary": "[MAX] [OB] [Phone] Validate that main controls are displayed when a new OB phone call is realized."
+        },
+        "Internal": {
+            "ID": "IC-62592",
+            "Sumary": "MAX OB Phone Call"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62588",
+            "Sumary": "[MAX] [Glance] [Main Panel elements] [Call History] Validate that No recent calls it's displayed in Call History section when log in agent."
+        },
+        "Internal": {
+            "ID": "IC-62588",
+            "Sumary": "MAX > Main Panel elements > Call History > No recent calls"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62585",
+            "Sumary": "[MAX][Glance][Call History] Verify that the glance shows 1 recent call (outbound)"
+        },
+        "Internal": {
+            "ID": "IC-62585",
+            "Sumary": "MAX > Main Panel elements > Contact History > 1 recent call (outbound)"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62602",
+            "Sumary": "[MAX][PC][Disposition] Verify the Disposition controls are displayed in PC call."
+        },
+        "Internal": {
+            "ID": "IC-62602",
+            "Sumary": "MAX>PC>Disposition> Verify the Disposition controls are displayed in PC call."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62578",
+            "Sumary": "[MAX] [PC] Verify that ACW Timer is visible"
+        },
+        "Internal": {
+            "ID": "IC-62578",
+            "Sumary": "MAX> PC>Timer for ACW is not visible (countdown) - Agent Unavailable State is not happening"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62616",
+            "Sumary": "[MAX] [OB] [Phone] [OSH] Verify Multi-party conference"
+        },
+        "Internal": {
+            "ID": "IC-62616",
+            "Sumary": "MCH > Omnichannel > Multi-party conference"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62595",
+            "Sumary": "[MAX] [WI] Verify that Accept / Reject window it's being displayed."
+        },
+        "Internal": {
+            "ID": "IC-62595",
+            "Sumary": "[MAX] Accept reject is cut off"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62648",
+            "Sumary": "[Business Unit][PC][MAX][PC]Verify Max#ofcalls accepts only integer values between 1 and 10"
+        },
+        "Internal": {
+            "ID": "IC-62648",
+            "Sumary": "PC > Business Unit > Verify Max#ofcalls accepts only integer values between 1 and 10"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62645",
+            "Sumary": "[PC][Skill][General Settings] Verify Max#ofcalls accepts only integer values between 1 and 10"
+        },
+        "Internal": {
+            "ID": "IC-62645",
+            "Sumary": "PC > Skill > General Settings > Verify Max#ofcalls accepts only integer values between 1 and 10"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62655",
+            "Sumary": "[MAX - Error Escalation] Test auth failure"
+        },
+        "Internal": {
+            "ID": "IC-62655",
+            "Sumary": "[MAX - Error Escalation] Test auth failure"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62647",
+            "Sumary": "[Business Unit][PC] Verify tooltip is displayed for Max#ofcalls field in BU's Details page in Edit mode"
+        },
+        "Internal": {
+            "ID": "IC-62647",
+            "Sumary": "PC > Business Unit > Verify tooltip is displayed for Max#ofcalls field in BU's Details page in Edit mode"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62646",
+            "Sumary": "[PC][Business Unit] Verify tooltip is displayed for MaximumWaitTimetoConsider field in BU's Details page in Edit mode"
+        },
+        "Internal": {
+            "ID": "IC-62646",
+            "Sumary": "PC > Business Unit > Verify tooltip is displayed for MaximumWaitTimetoConsider field in BU's Details page in Edit mode"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62606",
+            "Sumary": "[MAX] [IB] [WI] Validate that Accept / Reject border is transparent - WI"
+        },
+        "Internal": {
+            "ID": "IC-62606",
+            "Sumary": "[MAX] Accept reject border is transparent - WI"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62575",
+            "Sumary": "[MAX] [Agent] [Update Setup Session page]: Phone number valid and invalid values on MAX and Thin agent"
+        },
+        "Internal": {
+            "ID": "IC-62575",
+            "Sumary": "[Update Setup Session page]: Phone number valid and invalid values on MAX and Thin agent"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62589",
+            "Sumary": "[MAX] [WI] Validate that WorkItem Workspace it's closed when end it on MAX."
+        },
+        "Internal": {
+            "ID": "IC-62589",
+            "Sumary": "MAX WorkItem"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62638",
+            "Sumary": "[MAX] [Diposition] [WI] verify the ACW for active contact should be marked as Active on Accept new contact"
+        },
+        "Internal": {
+            "ID": "IC-62638",
+            "Sumary": "MAX> Disposition> WI> verify the ACW for active contact should be marked as Active on Accept new contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62576",
+            "Sumary": "[MAX] [SCH] [WI] - Generate a Work item contact"
+        },
+        "Internal": {
+            "ID": "IC-62576",
+            "Sumary": "MAX> SCH> WI> Generate a Work item contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62634",
+            "Sumary": "[MAX][OSH][WI][Reject] Verify the Reject option in a WI is placed correctly in Agent queue"
+        },
+        "Internal": {
+            "ID": "IC-62634",
+            "Sumary": "MAX> OSH> WI> Reject> Verify the Reject option in a WI is placed correctly in Agent queue"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62605",
+            "Sumary": "[MAX] [New] [OutboundEmail] List of Skills are displayed without duplicated ones."
+        },
+        "Internal": {
+            "ID": "IC-62605",
+            "Sumary": "[MAX] [New] [OutboundEmail] List of Skills are displayed without duplicated ones."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62612",
+            "Sumary": "MAX> Quick Reply> Digital Contacts> Verify the quick replies window is expanded (window out) or collapse (window in) when we have a Digital Contact"
+        },
+        "Internal": {
+            "ID": "IC-62612",
+            "Sumary": "MAX> Quick Reply> Digital Contacts> Verify the quick replies window is expanded (window out)  or collapse (window in) when we have a Digital Contact"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62610",
+            "Sumary": "[MAX] Verify that when internal call between agents is made must show calling agent first and last name on accept dialog box."
+        },
+        "Internal": {
+            "ID": "IC-62610",
+            "Sumary": "[MAX] internal transfers are showing as Unknown until the call is accepted"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62600",
+            "Sumary": "[MAX][SCH][Disposition] Verify the Disposition panel is popping out automatically when Chat and WI contacts are ended."
+        },
+        "Internal": {
+            "ID": "IC-62600",
+            "Sumary": "MAX> SCH> Disposition> Verify the Disposition panel is popping out automatically when Chat and WI contacts are ended."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62661",
+            "Sumary": "[MAX][Callback Disposition][Save and Redial Button] UI verification"
+        },
+        "Internal": {
+            "ID": "IC-62661",
+            "Sumary": "MAX > Callback Dispostion > Save and Callback Button > UI verification"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62618",
+            "Sumary": "[MAX][OSH] Add contact icons where they are missing"
+        },
+        "Internal": {
+            "ID": "IC-62618",
+            "Sumary": "[MAX] Add contact icons where they are missing"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62658",
+            "Sumary": "[MAX][UI][Glance][Waiting Panel (bar)] 1 Chanel displayed as per assigned to agent - counter display"
+        },
+        "Internal": {
+            "ID": "IC-62658",
+            "Sumary": "MAX > UI > Main Panel > Waiting Panel (bar) > 1 Chanel displayed as per assigned to agent - counter display"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62659",
+            "Sumary": "[MAX][UI][Glance][Waiting Panel (bar)] 1 Chanel displayed as per assigned to agent - icon display"
+        },
+        "Internal": {
+            "ID": "IC-62659",
+            "Sumary": "MAX > UI > Main Panel > Waiting Panel (bar) > 1 Chanel displayed as per assigned to agent - icon display"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62652",
+            "Sumary": "[MAX][Disposition] New Disposition Dialog"
+        },
+        "Internal": {
+            "ID": "IC-62652",
+            "Sumary": "MAX>Disposition>New Disposition Dialog"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62684",
+            "Sumary": "[MAX][Email]MAX > Email > Basic Inbound Email Transfer To a Skill where agent is logged off"
+        },
+        "Internal": {
+            "ID": "IC-62684",
+            "Sumary": "MAX > Email > Basic Inbound Email Transfer To a Skill where agent is logged off"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62680",
+            "Sumary": "[MAX][Email]MAX > Email > Inbound email interrupted by call - save reply draft progress"
+        },
+        "Internal": {
+            "ID": "IC-62680",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - save reply draft progress"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62679",
+            "Sumary": "[MAX][Email]MAX > Email > Inbound email interrupted by call after minimum work time setting"
+        },
+        "Internal": {
+            "ID": "IC-62679",
+            "Sumary": "MAX > Email > Inbound email interrupted by call after minimum work time setting"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62677",
+            "Sumary": "[MAX][Email]MAX > Email > Inbound email interrupted by call - forward"
+        },
+        "Internal": {
+            "ID": "IC-62677",
+            "Sumary": "MAX > Email > Inbound email interrupted by call - forward"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62653",
+            "Sumary": "[MAX] [Disposition] - Verify the Disposition dialog pops up at the end of a contact."
+        },
+        "Internal": {
+            "ID": "IC-62653",
+            "Sumary": "MAX>Disposition> Verify the Disposition dialog pops up at the end of a contact."
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62617",
+            "Sumary": "[MAX][Accept Reject Dialog] Skill name"
+        },
+        "Internal": {
+            "ID": "IC-62617",
+            "Sumary": "MAX>Accept Reject Dialog>Skill name"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62601",
+            "Sumary": "MAX> SCH> Email> Verify the “Email workspace” resizes correctly when we have an Email and Phone Contact delivers in Agent"
+        },
+        "Internal": {
+            "ID": "IC-62601",
+            "Sumary": "MAX> SCH> Email> Verify the “Email workspace” resizes correctly when we have an Email and Phone Contact delivers in Agent"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62637",
+            "Sumary": "[MAX] Omnichannel - Icons correctly displayed on Assigned Skills pane"
+        },
+        "Internal": {
+            "ID": "IC-62637",
+            "Sumary": "[MAX] Omnichannel - Icons correctly displayed on Assigned Skills pane"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-62675",
+            "Sumary": "[MAX][OB Phone]MAX > Voice - Interactions> Agent with OB Skills Cold Transfer To An External Number"
+        },
+        "Internal": {
+            "ID": "IC-62675",
+            "Sumary": "MAX > Voice - Interactions> Agent with OB Skills Cold Transfer To An External Number"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65937",
+            "Sumary": "TO31>Create Tenant"
+        },
+        "Internal": {
+            "ID": "449556",
+            "Sumary": "TO31>Create Tenant"
+        },
+        "Cluster": "TO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65936",
+            "Sumary": "TO31>Create new employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "TO31>Create new employee"
+        },
+        "Cluster": "TO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65933",
+            "Sumary": "TO31 > Inbound Call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "TO31 > Inbound Call Agent hangs up call"
+        },
+        "Cluster": "TO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65930",
+            "Sumary": "TO31> Outbound call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "TO31> Outbound call Agent hangs up call"
+        },
+        "Cluster": "TO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65918",
+            "Sumary": "TO31> Impersonate and configure"
+        },
+        "Internal": {
+            "ID": "469642",
+            "Sumary": "TO31> Impersonate and configure"
+        },
+        "Cluster": "TO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65927",
+            "Sumary": "TO32>Create Tenant"
+        },
+        "Internal": {
+            "ID": "449556",
+            "Sumary": "TO32>Create Tenant"
+        },
+        "Cluster": "TO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65926",
+            "Sumary": "TO32> Create new employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "TO32> Create new employee"
+        },
+        "Cluster": "TO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65925",
+            "Sumary": "TO32> Inbound Call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "TO32> Inbound Call Agent hangs up call"
+        },
+        "Cluster": "TO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65924",
+            "Sumary": "TO32>Outbound call Agent hangs up call"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "TO32>Outbound call Agent hangs up call"
+        },
+        "Cluster": "TO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65917",
+            "Sumary": "TO32> Impersonate and Configure"
+        },
+        "Internal": {
+            "ID": "469642",
+            "Sumary": "TO32> Impersonate and Configure"
+        },
+        "Cluster": "TO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65938",
+            "Sumary": "SO31 > Create Tenant"
+        },
+        "Internal": {
+            "ID": "449556",
+            "Sumary": "SO31 > Create Tenant"
+        },
+        "Cluster": "SO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65935",
+            "Sumary": "SO31>Create new employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "SO31>Create new employee"
+        },
+        "Cluster": "SO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65932",
+            "Sumary": "SO31>Inbound call Agent hangs up the call"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "SO31>Inbound call Agent hangs up the call"
+        },
+        "Cluster": "SO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65929",
+            "Sumary": "SO31> Outbound call Agent hangs up the call"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "SO31> Outbound call Agent hangs up the call"
+        },
+        "Cluster": "SO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65916",
+            "Sumary": "SO31> Impersonate and configure"
+        },
+        "Internal": {
+            "ID": "469642",
+            "Sumary": "SO31> Impersonate and configure"
+        },
+        "Cluster": "SO31"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65923",
+            "Sumary": "SO32 > Create Tenant"
+        },
+        "Internal": {
+            "ID": "449556",
+            "Sumary": "SO32 > Create Tenant"
+        },
+        "Cluster": "SO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65921",
+            "Sumary": "SO32> Outbound call Agent hangs up the call"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "SO32> Outbound call Agent hangs up the call"
+        },
+        "Cluster": "SO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65920",
+            "Sumary": "SO32>Create new employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "SO32>Create new employee"
+        },
+        "Cluster": "SO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65919",
+            "Sumary": "SO32>Inbound call Agent hangs up the call"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "SO32>Inbound call Agent hangs up the call"
+        },
+        "Cluster": "SO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-65915",
+            "Sumary": "SO32>Impersonate and Configure"
+        },
+        "Internal": {
+            "ID": "469642",
+            "Sumary": "SO32>Impersonate and Configure"
+        },
+        "Cluster": "SO32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-77382",
+            "Sumary": "B32>Outbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "B32>Outbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "B32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-77385",
+            "Sumary": "B32 > Evolve > Create New Employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "B32 > Evolve > Create New Employee"
+        },
+        "Cluster": "B32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-77374",
+            "Sumary": "B32>Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "B32>Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "B32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-77383",
+            "Sumary": "B32 > Evolve > Launch MAX Agent"
+        },
+        "Internal": {
+            "ID": "IC-58800",
+            "Sumary": "B32 > Evolve > Launch MAX Agent"
+        },
+        "Cluster": "B32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-58800",
+            "Sumary": "C32 > Evolve > Launch MAX Agent"
+        },
+        "Internal": {
+            "ID": "IC-58800",
+            "Sumary": "C32 > Evolve > Launch MAX Agent"
+        },
+        "Cluster": "C32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-58804",
+            "Sumary": "C32 > Evolve> Outbound call Agent ends call(voice + screen)"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "C32 > Evolve> Outbound call Agent ends call(voice + screen)"
+        },
+        "Cluster": "C32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-58799",
+            "Sumary": "C32 > Evolve > Create New Employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "C32 > Evolve > Create New Employee"
+        },
+        "Cluster": "C32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-58803",
+            "Sumary": "C32 > Evolve> Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "C32 > Evolve> Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "C32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-107371",
+            "Sumary": "[Patron][BE]Verify that the BE is displayed as Custom Workspace when the toggle is On and Digital Engangement is checked"
+        },
+        "Internal": {
+            "ID": "IC-107371",
+            "Sumary": "[Patron][BE]Verify that the BE is displayed as Custom Workspace when the toggle is On and Digital Engangement is checked"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-107740",
+            "Sumary": "[Patron][BE]Verify that the BE is closed once press the X"
+        },
+        "Internal": {
+            "ID": "IC-107740",
+            "Sumary": "[Patron][BE]Verify that the BE is closed once press the X"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-107741",
+            "Sumary": "[Patron][BE]Verify that BE is displayed once refresh MAX"
+        },
+        "Internal": {
+            "ID": "IC-107741",
+            "Sumary": "[Patron][BE]Verify that BE is displayed once refresh MAX"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-107742",
+            "Sumary": "[Patron][BE]Verify that the X bar is displayed correctly with ADA=On"
+        },
+        "Internal": {
+            "ID": "IC-107742",
+            "Sumary": "[Patron][BE]Verify that the X bar is displayed correctly with ADA=On"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-108849",
+            "Sumary": "[Patron][BE] Verify that BE workspace is displayed by default when WFM is enabled"
+        },
+        "Internal": {
+            "ID": "IC-108849",
+            "Sumary": "[Patron][BE] Verify that BE workspace is displayed by default when WFM is enabled"
+        }
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111684",
+            "Sumary": "A32>Outbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "A32>Outbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "A32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111680",
+            "Sumary": "A32 > Evolve > Create New Employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "A32 > Evolve > Create New Employee"
+        },
+        "Cluster": "A32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111683",
+            "Sumary": "A32>Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "A32>Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "A32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111682",
+            "Sumary": "A32 > Evolve > Launch MAX Agent"
+        },
+        "Internal": {
+            "ID": "IC-58800",
+            "Sumary": "A32 > Evolve > Launch MAX Agent"
+        },
+        "Cluster": "A32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111693",
+            "Sumary": "E32 > Evolve > Launch MAX Agent"
+        },
+        "Internal": {
+            "ID": "IC-58800",
+            "Sumary": "E32 > Evolve > Launch MAX Agent"
+        },
+        "Cluster": "E32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111695",
+            "Sumary": "E32 > Evolve> Outbound call Agent ends call(voice + screen)"
+        },
+        "Internal": {
+            "ID": "449558",
+            "Sumary": "E32 > Evolve> Outbound call Agent ends call(voice + screen)"
+        },
+        "Cluster": "E32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111692",
+            "Sumary": "E32 > Evolve > Create New Employee"
+        },
+        "Internal": {
+            "ID": "449552",
+            "Sumary": "E32 > Evolve > Create New Employee"
+        },
+        "Cluster": "E32"
+    },
+    {
+        "JiraXray": {
+            "KeyID": "IC-111694",
+            "Sumary": "E32 > Evolve> Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Internal": {
+            "ID": "449554",
+            "Sumary": "E32 > Evolve> Inbound Call Agent hangs up call (voice + screen)"
+        },
+        "Cluster": "E32"
+    }
+    
+]

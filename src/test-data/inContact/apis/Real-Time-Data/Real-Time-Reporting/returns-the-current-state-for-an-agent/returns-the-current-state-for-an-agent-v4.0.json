@@ -1,0 +1,199 @@
+[
+    {
+        "Id": "RTV40119",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV40118",
+        "Description": "with invalid query",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "Invalid"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV40120",
+        "Description": "with invalid token",
+        "Data": [
+            {
+                "PathParams": {
+                    "token": "Invalid"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": "Unauthorized"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV40121",
+        "Description": "with agentId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": 2147483648
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": 2147483648
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": -2147483649
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": 4294967296
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "-5"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": 9223372036854775808
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": -9223372036854775809
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": 18446744073709551616
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            }
+
+        ]
+    },
+    {
+        "Id": "RTV40122",
+        "Description": "with numeric agentId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "test"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            }
+        ]
+    }
+]

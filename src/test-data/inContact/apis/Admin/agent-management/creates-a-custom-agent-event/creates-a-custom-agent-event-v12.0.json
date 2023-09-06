@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "ADV120030",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "eventName": "",
+                    "persistInMemory": true,
+                    "data": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

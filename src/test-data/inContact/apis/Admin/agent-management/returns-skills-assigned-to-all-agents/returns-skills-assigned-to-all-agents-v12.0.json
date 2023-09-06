@@ -1,0 +1,29 @@
+[
+    {
+        "Id": "ADV120021",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderBy": "",
+                    "mediaTypeId": "",
+                    "outboundStrategy": "",
+                    "isSkillActive": ""
+                },
+                "BodyParams": {
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

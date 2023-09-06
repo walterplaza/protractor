@@ -1,0 +1,17 @@
+[{
+    "Id": "RPV120009",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "transportCode": "123",
+            "skip": "",
+            "top": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

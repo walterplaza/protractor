@@ -1,0 +1,33 @@
+[
+    {
+        "Id": "RTV10042",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV10043",
+        "Description": "with invalid Token",
+        "Data": [
+            {                
+                "PathParams": {                    
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    }
+]

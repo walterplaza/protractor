@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "ADV120064",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                },
+                "BodyParams": {
+                    "fileName": "abc.txt",
+                    "file": "",
+                    "overwrite": true
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "Id": "AGV20181",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20182",
+        "Description": "with empty agentId",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "agentId": ""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20183",
+        "Description": "without agentId",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "agentId": null
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20184",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20185",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

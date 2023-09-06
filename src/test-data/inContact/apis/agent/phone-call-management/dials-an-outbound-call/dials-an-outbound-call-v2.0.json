@@ -1,0 +1,197 @@
+[
+    {
+        "Id": "AGV20075",
+        "Description": "with Invalid Query Data",
+        "Data": [
+            {
+                "PathParams": {
+                    "testData": "invalidSessionId",
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidPhoneNumber",
+                    "phoneNumber": "invalid",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Phone Number is not valid."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidPhoneNumber",
+                    "phoneNumber": "",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Phone Number is not valid."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidSkillName",
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "invalid"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Skill is not valid."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidSkillName",
+                    "phoneNumber": "dynamicValue",
+                    "skillName": ""
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Skill is not valid."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20077",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20078",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20079",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20080",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "specChars"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20081",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "specChars",
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Phone Number is not valid."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "dynamicValue",
+                    "skillName": "specChars"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Skill is not valid."
+                }
+            }
+        ]
+    }
+]

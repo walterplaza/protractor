@@ -1,0 +1,362 @@
+[
+    {
+        "Id": "AGV40033",
+        "Description": "with valid required information",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "dynamicValue",
+                "contactId": "dynamicValue"
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "dynamicValue",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 202,
+                "statusDescription": "Accepted"
+            }
+        }]
+    },
+    {
+        "Id": "AGV40034",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": 
+        [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "-"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "dynamicValue",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact ID."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "2147483648"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "dynamicValue",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact ID."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "-2147483649"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "dynamicValue",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact ID."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "4294967296 "
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "dynamicValue",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact ID."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40035",
+        "Description": "with numeric contactId Path param that contains alphabet chars",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "dynamicValue",
+                "contactId": "dynamicValue"
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "dynamicValue",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Invalid Contact ID."
+            }
+        }]
+    },
+    {
+        "Id": "AGV40036",
+        "Description": "with empty Path params",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "",
+                "contactId": ""
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "dynamicValue",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }]
+    },
+    {
+        "Id": "AGV40037",
+        "Description": "with Path params that contain special chars",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "dynamicValue",
+                "contactId": "specChars"
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "dynamicValue",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Invalid Contact ID."
+            }
+        }]
+    },
+    {
+        "Id": "AGV40038",
+        "Description": "with Query param is invalid Number type",
+        "Data": 
+            [
+                {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "dynamicValue"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "-",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "dynamicValue"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "2147483648",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "dynamicValue"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "-2147483649",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": "dynamicValue"
+                },
+                "QueryParams": {
+                    "bccAddress": "",
+                    "subject": "this is a test",
+                    "bodyHtml": "",
+                    "attachments": "",
+                    "attachmentNames": "",
+                    "originalAttachmentNames": "",
+                    "skillId": "4294967296",
+                    "toAddress": "test@gmail.com",
+                    "fromAddress": "",
+                    "ccAddress": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Skill Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40039",
+        "Description": "with numeric Query param that contains alphabet chars",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "dynamicValue",
+                "contactId": "dynamicValue"
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "dynamicValue",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid Skill Id."
+            }
+        }]
+    },
+    {
+        "Id": "AGV40040",
+        "Description": "with Query param that contains special chars",
+        "Data": [{
+            "PathParams": {
+                "sessionId": "dynamicValue",
+                "contactId": "dynamicValue"
+            },
+            "QueryParams": {
+                "bccAddress": "",
+                "subject": "this is a test",
+                "bodyHtml": "",
+                "attachments": "",
+                "attachmentNames": "",
+                "originalAttachmentNames": "",
+                "skillId": "specChars",
+                "toAddress": "test@gmail.com",
+                "fromAddress": "",
+                "ccAddress": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid Skill Id."
+            }
+        }]
+    }
+]

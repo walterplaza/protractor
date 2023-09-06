@@ -1,0 +1,27 @@
+[
+    {
+        "Id": "PTV120002",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "firstName": "ABC",
+                    "lastName": "CDE",
+                    "phoneNumber": "",
+                    "skill": "",
+                    "targetAgent": "",
+                    "promiseDate": "",
+                    "promiseTime": "",
+                    "notes": "",
+                    "timeZone": ""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

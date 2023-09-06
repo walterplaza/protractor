@@ -1,0 +1,19 @@
+[
+    {
+        "Id": "ADV120100",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "campaignId":""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

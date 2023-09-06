@@ -1,0 +1,350 @@
+[{
+        "Id": "RPV30072",
+        "Description": "with valid required information",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 200,
+                "statusDescription": "Success"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30073",
+        "Description": "with teamId Path param is invalid Number type",
+        "Data": [{
+            "PathParams": {
+                "teamId": "2147483648"
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }, {
+            "PathParams": {
+                "teamId": "-2147483649"
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }, {
+            "PathParams": {
+                "teamId": "4294967296"
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }, {
+            "PathParams": {
+                "teamId": "-5"
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30074",
+        "Description": "with numeric teamId Path param that contains alphabet chars",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30075",
+        "Description": "with empty teamId Path param",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 200,
+                "statusDescription": "Success"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30076",
+        "Description": "with Path param that contains special chars",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Not Found"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30077",
+        "Description": "with invalid Query param",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "invalidDateRange",
+                "endDate": "invalidDateRange",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "2019-01-32",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "2019-13-15",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "2019-02-30",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "2019-13-15",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "2019-01-32",
+                "endDate": "2019-02-30",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30078",
+        "Description": "with Query param that contains special chars",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30079",
+        "Description": "without Required Query param",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "null",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "null",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30080",
+        "Description": "without all Required Query params",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "null",
+                "endDate": "null",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30081",
+        "Description": "with empty Query param",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "emptySign",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }, {
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "emptySign",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30082",
+        "Description": "with all empty Query params",
+        "Data": [{
+            "PathParams": {
+                "teamId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "",
+                "fields": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Bad Request"
+            }
+        }]
+    }
+]

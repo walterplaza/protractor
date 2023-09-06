@@ -1,0 +1,41 @@
+[
+    {
+        "Id": "ADV120041",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},                               
+                "QueryParams": {},                                                                
+                "BodyParams": {
+                    "teams": [
+                        {
+                          "teamName": "ADV120041_TeamName",
+                          "isActive": true,
+                          "maxConcurrentChats": 0,
+                          "wfoEnabled": true,
+                          "wfm2Enabled": true,
+                          "qm2Enabled": true,
+                          "inViewEnabled": true,
+                          "inViewGamificationEnabled": true,
+                          "inViewChatEnabled": true,
+                          "inViewLMSEnabled": true,
+                          "notes": "ADV120041_Notes",
+                          "maxEmailAutoParkingLimit": 0,
+                          "analyticsEnabled": true,
+                          "requestContact": true,
+                          "contactAutoFocus": true,
+                          "chatThreshold": 0,
+                          "emailThreshold": 0,
+                          "workItemThreshold": 0,
+                          "voiceThreshold": 0
+                        }
+                      ]
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }            
+        ]
+    }
+]

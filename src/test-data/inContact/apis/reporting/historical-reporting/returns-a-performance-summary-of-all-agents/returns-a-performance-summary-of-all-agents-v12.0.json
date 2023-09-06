@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "RPV120005",
+        "Description": "with valid reqired information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[{
+    "Id": "PTV80015",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "previewText": "This text is 100% awesome!!",
+            "label": "testLabel"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV80016",
+    "Description": "with empty Path param",
+    "Data": [{
+        "PathParams": {
+            "chatSession": ""
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "previewText": "This text is 100% awesome!!",
+            "label": "testLabel"
+        },
+        "Expected": {
+            "statusCode": 405,
+            "statusDescription": "Method Not Allowed"
+        }
+    }]
+}, {
+    "Id": "PTV80017",
+    "Description": "with Path param that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "specChars"
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "previewText": "This text is 100% awesome!!",
+            "label": "testLabel"
+        },
+        "Expected": {
+            "statusCode": 404,
+            "statusDescription": "Invalid chatSession Id"
+        }
+    }]
+}, {
+    "Id": "PTV80018",
+    "Description": "with Body field that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "previewText": "specChars",
+            "label": "testLabel"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "previewText": "This text is 100% awesome!!",
+            "label": "specChars"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}]

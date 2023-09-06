@@ -1,0 +1,126 @@
+[
+    {
+        "Id": "AGV20064",
+        "Description": "with Invalid Query Data",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20065",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20066",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20067",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20068",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20069",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidSkillName"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20070",
+        "Description": "without required Body field",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "null"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidSkillName"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20071",
+        "Description": "with empty required Body field",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": ""
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidSkillName"
+                }
+            }
+        ]
+    }
+]

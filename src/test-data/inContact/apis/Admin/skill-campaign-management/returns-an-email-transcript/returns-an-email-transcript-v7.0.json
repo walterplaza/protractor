@@ -1,0 +1,183 @@
+[
+    {
+        "Id": "ADV70001",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {    
+        "Id": "ADV70002",
+        "Description": "with contactid Path param is invalid Number type",
+        "Data": [
+    
+            {
+                "PathParams": {
+                    "contactId": -2147483649	
+                },
+                
+                "QueryParams": {
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": -5
+                },
+                
+                "QueryParams": {
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": "9,223,372,036,854,775,808"
+                },
+                
+                "QueryParams": {
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": "-9,223,372,036,854,775,809"
+                },
+                
+                "QueryParams": {
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },{
+                "PathParams": {
+                    "contactId": "-18,446,744,073,709,551,616"
+                },
+                
+                "QueryParams": {
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV70003",
+        "Description": " with numeric contactId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV70004",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidcontactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV70005",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV70006",
+        "Description": "with invalid Query param",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {
+                    "includeAttachments": "Invalidattachment"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidIncludeAttachments"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV70007",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidIncludeAttachments"
+                }
+            }
+        ]
+    }
+]

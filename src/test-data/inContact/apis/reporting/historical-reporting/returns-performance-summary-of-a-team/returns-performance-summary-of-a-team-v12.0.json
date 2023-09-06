@@ -1,0 +1,19 @@
+[{
+    "Id": "RPV120019",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "teamId": ""
+        },
+        "QueryParams": {
+            "startDate": "",
+            "endDate": "",
+            "fields": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

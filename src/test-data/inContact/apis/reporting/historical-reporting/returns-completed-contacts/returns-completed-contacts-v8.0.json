@@ -1,0 +1,853 @@
+[
+    {
+        "Id": "RPV80036",
+        "Description": " with Invalid Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "InvalidDateRange",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid DateRange - Date Range must be 30 days or less"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "InvalidDateRange",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince - 'replaceValue', must be 30 days or less"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidUpdateSince",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "02-30-2017",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidUpdateSince",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "13-15-2017",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidUpdateSince",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "05-30-201-7",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidStartDate",
+                    "startDate": "13-15-2017",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidStartDate",
+                    "startDate": "05-30-201-7",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidDate",
+                    "startDate": "01-32-2017",
+                    "endDate": "02-30-2017",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80034",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80035",
+        "Description": "with invalid Token ",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "null",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80039",
+        "Description": "with all empty Query params",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid DateRange - No dates fields provided"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80038",
+        "Description": "with empty Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80040",
+        "Description": "without Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "null",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80041",
+        "Description": "without all Required Query params",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "null",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid DateRange - No dates fields provided"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80033",
+        "Description": "with Invalid Query Data",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidValue",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "invalidFields",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid fields list"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidValue",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "invalidSkip",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid skip"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidValue",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "invalidTop",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid top"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidValue",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "invalidOrderbyArguments",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid orderby arguments"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidStartDate",
+                    "startDate": "InvalidDate",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidStartDate",
+                    "startDate": "02-30-2017",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidStartDate",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidEndDate",
+                    "startDate": "",
+                    "endDate": "InvalidDate",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidEndDate",
+                    "startDate": "",
+                    "endDate": "02-30-2017",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "InvalidUpdatedSince",
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "InvalidUpdatedSince",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "InvalidRangeDate",
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "InvalidUpdatedSince",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid DateRange - startDate must be less than endDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV80037",
+        "Description": " with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "startDateSpecChars",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "endDateSpecChars",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "updatedSinceSpecChars",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId": "",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            }
+        ]
+    }
+]

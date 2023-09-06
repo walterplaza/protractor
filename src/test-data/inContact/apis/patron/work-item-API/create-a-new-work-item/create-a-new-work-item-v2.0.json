@@ -1,0 +1,73 @@
+[{
+    "Id": "PTV20191",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {},
+        "BodyParams": {
+            "workItemId": "",
+            "workItemPayload": "",
+            "workItemType": "",
+            "from": "",
+            "pointOfContact": "dynamicValue"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV20192",
+    "Description": "with Body fields that contains special chars",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {},
+        "BodyParams": {
+            "workItemId": "",
+            "workItemPayload": "",
+            "workItemType": "",
+            "from": "",
+            "pointOfContact": "specChars"
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Point of contact is not valid for this business unit."
+        }
+    }]
+}, {
+    "Id": "PTV20193",
+    "Description": "without Required Body fields",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {},
+        "BodyParams": {
+            "workItemId": "",
+            "workItemPayload": "",
+            "workItemType": "",
+            "from": "",
+            "pointOfContact": "null"
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Point of contact is not valid for this business unit."
+        }
+    }]
+}, {
+    "Id": "PTV20194",
+    "Description": "with empty required Body field",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {},
+        "BodyParams": {
+            "workItemId": "",
+            "workItemPayload": "",
+            "workItemType": "",
+            "from": "",
+            "pointOfContact": ""
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Point of contact is not valid for this business unit."
+        }
+    }]
+}]

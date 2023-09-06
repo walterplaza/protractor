@@ -1,0 +1,27 @@
+[{
+    "Id": "AGV120020",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "sessionId": "",
+            "contactId": ""
+        },
+        "QueryParams": {
+            "bccAddress": "",
+            "subject": "",
+            "bodyHtml": "",
+            "attachments": "",
+            "attachmentNames": "",
+            "originalAttachmentNames": "",
+            "skillId": "",
+            "toAddress": "test@email.com",
+            "fromAddress": "",
+            "ccAddress": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}]

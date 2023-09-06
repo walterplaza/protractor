@@ -1,0 +1,18 @@
+[{
+    "Id": "RPV120031",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "fields": "",
+            "startDate": "",
+            "endDate": "",
+            "mediaTypeId": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

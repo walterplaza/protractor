@@ -1,0 +1,62 @@
+[
+    {
+        "Id": "AGV20060",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20061",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20062",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20063",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidAgentUsername"
+                }
+            }
+        ]
+    }
+]

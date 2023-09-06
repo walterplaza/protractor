@@ -1,0 +1,75 @@
+[
+    {
+        "Id": "AG0040",
+        "Description": "Valid required information",
+        "Data": [
+            {
+                "PathParams": {  },
+                "QueryParams": {},
+                "BodyParams": {
+                    "isTyping": "true",
+                     "isTextEntered": "true"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AG0052",
+        "Description": "With invalid session",
+        "Data": [
+            {
+                "PathParams": {  },
+                "QueryParams": {},
+                "BodyParams": {
+                    "isTyping": "true",
+                     "isTextEntered": "true"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidChatSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AG0054",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {  },
+                "QueryParams": {},
+                "BodyParams": {
+                    "isTyping": "true",
+                     "isTextEntered": "true"
+                },
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    
+    {
+        "Id": "AG0055",
+        "Description": "with special chars",
+        "Data": [
+            {
+                "PathParams": {  },
+                "QueryParams": {},
+                "BodyParams": {
+                    "isTyping": "true",
+                     "isTextEntered": "true"
+                },
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "Id": "RTV40124",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV40123",
+        "Description": "with invalid query",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "Invalid"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Updated Since"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV40125",
+        "Description": "with invalid token",
+        "Data": [
+            {
+                "PathParams": {
+                    "token": "Invalid"
+                },
+                "QueryParams": {
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": "Unauthorized"
+                }
+            }
+        ]
+    }
+]

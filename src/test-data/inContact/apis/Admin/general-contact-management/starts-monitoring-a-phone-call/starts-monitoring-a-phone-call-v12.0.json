@@ -1,0 +1,17 @@
+[{
+    "Id": "ADV120131",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "contactId": ""
+        },
+        "QueryParams": {},
+        "BodyParams": {
+            "phoneNumber": ""
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}]

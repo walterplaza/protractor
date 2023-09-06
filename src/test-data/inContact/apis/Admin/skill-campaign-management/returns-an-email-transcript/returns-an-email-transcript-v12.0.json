@@ -1,0 +1,19 @@
+[
+    {
+        "Id": "ADV120128",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "includeAttachments": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": "No email transcript available"
+                }
+            }
+        ]
+    }
+]

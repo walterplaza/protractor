@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Report</title>
+	<meta charset="UTF-8">
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+			font-family: Calibri;
+			font-size: 11pt
+		}
+
+		th {
+			padding: 7px;
+			text-align: center;
+			font-size: 12pt;
+			border: 1px solid white;
+			font-weight: normal;
+			background-color: DarkGray
+		}
+
+		td {
+			padding: 7px;
+			text-align: center;
+			border: 1px solid black
+		}
+	</style>
+
+</head>
+
+<body>
+	<table style="border: none; text-align: center; margin-left: 75px; ">
+		<th style="width:60%;border: none; background-color:white; text-align: right">
+			<div>
+				<center>
+					<div class="row">
+						<table style="width:50%;border: 2px solid white">
+							<tr>
+								<th style="WIDTH:500mm; background-color:#548235; font-weight: bold">Suite</th>
+								<th style="WIDTH:200mm; font-weight: bold">Passed</th>
+								<th style="WIDTH:200mm; font-weight: bold">Failed</th>
+								<th style="WIDTH:200mm; font-weight: bold">Known Bug</th>
+								<th style="WIDTH:200mm; font-weight: bold">Skipped</th>
+								<th style="WIDTH:200mm; font-weight: bold">Total</th>
+							</tr>
+							<tr>
+								<td
+									style="WIDTH: 400; border: 1px solid white; background-color:#a9d08e; font-weight: bold">
+									Test Results
+								</td>
+								<td style="border: 1px solid white">${LG_NUM_OF_PASSED}</td>
+								<td style="border: 1px solid white">${LG_NUM_OF_FAILED}</td>
+								<td style="border: 1px solid white">${LG_NUM_OF_BUG}</td>
+								<td style="border: 1px solid white">0</td>
+								<td style="border: 1px solid white"><b>${LG_NUMBER_OF_TESTS}</b>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</center>
+			</div>
+		</th>
+		<th style="width:40%;border: none; background-color:white; text-align: left">
+			<div>
+				<div style="width: 50%; font-size: 12pt">
+					<div class="pull-left">
+						<b>Browser: </b>${LG_BROWSER_INFO}
+					</div>
+					<div class="pull-left">
+						<b>Platform: </b>${LG_PLATFORM_INFO}
+					</div>
+					<div class="pull-left">
+						<b>Environment: </b>${LG_GBU_ENV}
+					</div>
+					<div class="pull-left">
+						<b>Cluster ID: </b>${LG_CLUSTER_INFO}
+					</div>
+					<div class="pull-left" ${LG_SHOW_GBU_INFO}>
+						<b>GBU: </b>${LG_GBU_INFO}
+					</div>
+					<div class="pull-left" ${LG_SHOW_TENANT_INFO}>
+						<b>Tenant: </b>${LG_TENANT_NAME}
+					</div>
+				</div>
+			</div>
+		</th>
+	</table>
+	<br></br>
+
+	<center>
+		<table style="width:60%">
+			<tr>
+				<th style="border: 1px solid black; font-weight: bold">#</th>
+				<th style="border: 1px solid black; font-weight: bold">Test Case ID</th>
+				<th style="border: 1px solid black; font-weight: bold">Test Case name</th>
+				<th style="border: 1px solid black; font-weight: bold">Result</th>
+				<th style="border: 1px solid black; font-weight: bold">Duration<br>(hh:mm:ss)</br></th>
+			</tr>
+			${LG_TEST_DETAIL}
+			<tr>
+				<td colspan="4" style="text-align: right;font-weight:700">Total Execution Time</td>
+				<td>${LG_TEST_DURATION}</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

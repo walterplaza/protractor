@@ -1,0 +1,203 @@
+[
+    {
+        "Id": "AGV100001",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV100002",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Not Found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV100003",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "specChars"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid sessionId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV100004",
+        "Description": "with invalid Body field",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "2147483648",
+                    "toAddress": "null",
+                    "parentContactId": "null"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'skillId'"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "-2147483649",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'skillId'"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "4294967296",
+                    "toAddress": "null",
+                    "parentContactId": "null"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'skillId'"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "-5",
+                    "toAddress": "null",
+                    "parentContactId": "null"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid skillId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV100005",
+        "Description": "with numeric Body fields that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'skillId'"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV100006",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "specChars",
+                    "toAddress": "",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'skillId'"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "specChars",
+                    "parentContactId": null
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "toAddress"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillId": "dynamicValue",
+                    "toAddress": "",
+                    "parentContactId": "specChars"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid parameter 'parentContactId'"
+                }
+            }
+        ]
+    }
+]

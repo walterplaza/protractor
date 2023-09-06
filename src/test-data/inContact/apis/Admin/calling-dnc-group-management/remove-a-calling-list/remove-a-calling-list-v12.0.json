@@ -1,0 +1,17 @@
+[{
+    "Id": "ADV120153",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "listId": "",
+            "forceInactive": "",
+            "forceDelete": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

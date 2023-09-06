@@ -1,0 +1,260 @@
+[
+    {
+        "Id": "AGV40077",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40078",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "9,223,372,036,854,775,808"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "-9,223,372,036,854,775,809"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "18,446,744,073,709,551,616"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "-5"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40079",
+        "Description": "with numeric contactId that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40080",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Not Found"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Not Found"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": "",
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Not Found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40081",
+        "Description": "with Path params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "specChars",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "specChars"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40082",
+        "Description": "with invalid Body field",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": 2147483648
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid target Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": -2147483649
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid target Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": 4294967296
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid target Skill Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": -5
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid target Skill Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV40083",
+        "Description": "with numeric Body fields that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetSkillId": "abc4294967"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid target Skill Id."
+                }
+            }
+        ]
+    }
+]

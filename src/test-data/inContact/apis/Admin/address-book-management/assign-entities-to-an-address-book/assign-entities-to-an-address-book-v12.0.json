@@ -1,0 +1,19 @@
+[
+    {
+        "Id": "ADV120004",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},                               
+                "QueryParams": {
+                    "entityType":"Agent"                    
+                },                                   
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }            
+        ]
+    }
+]

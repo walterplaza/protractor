@@ -1,0 +1,62 @@
+{
+  "name": "incontactprotractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jasminewd2": "^2.0.6",
+    "clipboardy": "^1.2.3",
+    "csv-parse": "^4.3.3",
+    "csvtojson": "^2.0.8",
+    "fs": "0.0.1-security",
+    "fs-extra": "^6.0.1",
+    "googleapis": "^27.0.0",
+    "imap": "^0.8.19",
+    "jasmine": "^3.3.1",
+    "jasmine-reporters": "^2.3.2",
+    "jasmine2-protractor-utils": "^1.3.0",
+    "js-base64": "^2.5.1",
+    "js-logger": "^1.6.0",
+    "json2typescript": "^1.1.1",
+    "lodash": "^4.17.11",
+    "module-alias": "^2.2.0",
+    "moment": "^2.24.0",
+    "nodemailer": "^4.7.0",
+    "npm": "^5.10.0",
+    "path": "^0.12.7",
+    "protractor": "^5.4.2",
+    "protractor-hotkeys": "0.0.5",
+    "protractor-html-reporter": "^1.3.2",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2",
+    "xlsx": "^0.14.1",
+    "xmldoc": "^1.1.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/node": "^10.14.13"
+  },
+  "scripts": {
+    "checkTestCases": "cd .\\built\\conf\\other-tasks && node .\\testCaseFileData.js",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ThanhLe1916/incontact_protractor.git"
+  },
+  "author": "Thanh Le",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ThanhLe1916/incontact_protractor#readme",
+  "_moduleAliases": {
+    "@apis": "built/apis",
+    "@conf": "built/conf",
+    "@data-objects": "built/data-objects",
+    "@page-objects": "built/page-objects",
+    "@test-data": "built/test-data",
+    "@testcases": "built/testcases",
+    "@utilities": "built/utilities",
+    "@test-helpers": "built/test-helpers"
+  }
+}

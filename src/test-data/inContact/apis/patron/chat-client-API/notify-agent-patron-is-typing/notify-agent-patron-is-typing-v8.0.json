@@ -1,0 +1,179 @@
+[{
+    "Id": "PTV10023",
+    "Description": "with Invalid Token",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 401,
+            "statusDescription": null
+        }
+    }]
+}, {
+    "Id": "PTV80010",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV80011",
+    "Description": "with empty Path param",
+    "Data": [{
+        "PathParams": {
+            "chatSession": ""
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 405,
+            "statusDescription": "Method Not Allowed"
+        }
+    }]
+}, {
+    "Id": "PTV80012",
+    "Description": "with Path param that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "specChars"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 404,
+            "statusDescription": "Invalid chatSession Id"
+        }
+    }]
+}, {
+    "Id": "PTV80013",
+    "Description": "with Body fields that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": true,
+            "label": "specChars"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV80014",
+    "Description": "with invalid value for Boolean type Body field",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": 1,
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": "1=2",
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": "truetrue",
+            "isTextEntered": true,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": 1,
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": "2=1",
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+            "isTyping": true,
+            "isTextEntered": "truetrue",
+            "label": "testLabel"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}]

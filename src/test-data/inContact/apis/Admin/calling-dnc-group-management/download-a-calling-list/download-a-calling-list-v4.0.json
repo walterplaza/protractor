@@ -1,0 +1,272 @@
+[
+    {
+        "Id": "ADV40001",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40002",
+        "Description": "with listId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": "4294967296"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            },
+            {
+                "PathParams": {
+                    "listId": "-2147483649"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            },
+            {
+                "PathParams": {
+                    "listId": "-5"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            },
+            {
+                "PathParams": {
+                    "listId": "4294967296"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40003",
+        "Description": "with numeric listId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40004",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40005",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidListId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40006",
+        "Description": "with invalid value for Boolean type for Query param",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "'0'",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "'1'='1'",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "truetrue",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "ADV40007",
+        "Description": "with Query Param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "listId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "finalized": "",
+                    "includeRecords": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            }
+        ]
+    }
+]

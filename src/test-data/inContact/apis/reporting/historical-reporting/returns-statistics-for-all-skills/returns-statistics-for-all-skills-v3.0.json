@@ -1,0 +1,293 @@
+[{
+        "Id": "RPV30064",
+        "Description": "with Invalid Query Data",
+        "Data": [{
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "InvalidDate",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid startDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "02/30/2019",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid startDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "InvalidDate"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid endDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "02/30/2019"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid endDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "02/02/2019",
+                "endDate": "01/01/2019"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid date range. Max 30 days."
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "01/01/2019",
+                "endDate": "02/02/2019"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid date range. Max 30 days."
+            }
+        }]
+    },
+    {
+        "Id": "RPV30065",
+        "Description": "with all valid required information",
+        "Data": [{
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 200,
+                "statusDescription": "Success"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30066",
+        "Description": "with invalid startDate/endDate",
+        "Data": [{
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "2019-01-32",
+                    "endDate": "2019-02-30"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "2019-13-15",
+                    "endDate": "2019-13-15"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "2-019-05-30",
+                    "endDate": "2-019-05-30"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30067",
+        "Description": "with invalid date range (max = 30 days)",
+        "Data": [{
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "01/01/2019",
+                    "endDate": "01/30/2019"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }, {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "01/01/2019",
+                    "endDate": "02/02/2019"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid date range. Max 30 days."
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "02/02/2019",
+                    "endDate": "01/01/2019"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid date range. Max 30 days."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30068",
+        "Description": "with Query param that contains special chars",
+        "Data": [{
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "startDateStatusDescription": "Invalid startDate",
+                    "endDateStatusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "caseSpecial",
+                    "endDate": "caseSpecial"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30069",
+        "Description": "with empty startDate or endDate or all",
+        "Data": [{
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "emptySign"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "emptySign",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            }, {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30070",
+        "Description": "with invalid Token",
+        "Data": [{
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 401,
+                "statusDescription": null
+            }
+        }]
+    },
+    {
+        "Id": "RPV30071",
+        "Description": "without Required Query param",
+        "Data": [{
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "null",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid startDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "null"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid endDate"
+            }
+        }, {
+            "PathParams": {},
+            "QueryParams": {
+                "startDate": "null",
+                "endDate": "null"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid startDate"
+            }
+        }]
+    }
+]

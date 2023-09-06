@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "RTV120003",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": "",
+                    "stateId": -1
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": "No Contacts for the specified period"
+                }
+            }
+        ]
+    }
+]

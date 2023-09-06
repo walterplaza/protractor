@@ -1,0 +1,19 @@
+[{
+    "Id": "AGV120019",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "sessionId": ""
+        },
+        "QueryParams": {
+            "skillId": "",
+            "toAddress": "",
+            "parentContactId": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}]

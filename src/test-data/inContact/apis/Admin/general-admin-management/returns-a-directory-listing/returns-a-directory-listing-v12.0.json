@@ -1,0 +1,19 @@
+[
+    {
+        "Id": "ADV120070",
+        "Description": "Valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "folderName":""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    }
+]

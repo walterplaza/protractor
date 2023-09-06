@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "AGV120035",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {
+                    "DtmfSequence": "4000015000",
+                    "ToneDurationMS": "65",
+                    "ToneSpacingMS": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

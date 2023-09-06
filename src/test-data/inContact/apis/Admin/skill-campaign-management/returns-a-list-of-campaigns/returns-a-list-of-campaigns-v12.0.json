@@ -1,0 +1,24 @@
+[
+    {
+        "Id": "ADV120099",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "isActive": "false",
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "0",
+                    "top": "10000",
+                    "orderby": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

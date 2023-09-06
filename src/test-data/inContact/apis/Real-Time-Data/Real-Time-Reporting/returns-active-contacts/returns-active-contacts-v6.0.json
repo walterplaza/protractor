@@ -1,0 +1,559 @@
+[
+    {
+        "Id": "RTV60018",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": "No Contacts for the specified period"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60017",
+        "Description": "with Invalid Query",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "InvalidDate",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "InvalidFieldList",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid fields list 'InvalidFieldList'"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "InvalidMediaTypeId",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - 'InvalidMediaTypeId', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "InvalidSkillId",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - 'InvalidSkillId', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "InvalidCompaignId",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter campaignId - 'InvalidCompaignId', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "InvalidAgentId",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter agentId - 'InvalidAgentId', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "InvalidTeamId",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter teamId - 'InvalidTeamId', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "InvalidToAddr",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": "No Contacts for the specified period"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": "InvalidFromAddr"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 204,
+                    "statusDescription": "No Contacts for the specified period"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60019",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                    "token": "Invalid"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": "Unauthorized"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60020",
+        "Description": "invalid number type Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": 2147483648,
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - '2147483648', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": -2147483649,
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - '-2147483649', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": 4294967296,
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - '4294967296', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": -5,
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - '-5', not a valid mediaTypeId."
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": 2147483648,
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - '2147483648', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": -2147483649,
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - '-2147483649', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": 4294967296,
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - '4294967296', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": -5,
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - '-5', invalid skillId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60021",
+        "Description": "numeric Query param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "abc123",
+                    "skillId": "abc",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - 'abc123', must be an integer"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60022",
+        "Description": "invalid updatedSince Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "2017-01-32",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "2017-02-30",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "2017-13-15",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "2-017-05-30",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince "
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV60023",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "2019-11-11",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid updatedSince"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "1",
+                    "skillId": "",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter mediaTypeId - 'specChar', must be an integer"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "",
+                    "mediaTypeId": "",
+                    "skillId": "specChar",
+                    "campaignId": "",
+                    "agentId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "fromAddr": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid filter parameter skillId - 'specChar', must be an integer"
+                }
+            }
+        ]
+    }
+]

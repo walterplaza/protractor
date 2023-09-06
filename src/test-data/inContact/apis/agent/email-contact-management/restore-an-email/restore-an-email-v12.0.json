@@ -1,0 +1,16 @@
+[{
+    "Id": "AGV120028",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "sessionId": "",
+            "contactId": ""
+        },
+        "QueryParams": {},
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

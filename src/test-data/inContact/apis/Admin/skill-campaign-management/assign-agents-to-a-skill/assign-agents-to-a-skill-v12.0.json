@@ -1,0 +1,17 @@
+[{
+    "Id": "ADV120115",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "skillId": ""
+        },
+        "QueryParams": {
+            "agents": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

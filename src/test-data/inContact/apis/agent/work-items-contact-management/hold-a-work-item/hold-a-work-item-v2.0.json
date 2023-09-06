@@ -1,0 +1,137 @@
+[
+    {
+        "Id": "AGV20113",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20114",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": 2147483648
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": -2147483649
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": 4294967296
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": "-"
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20115",
+        "Description": "with numeric contactId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20116",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20117",
+        "Description": "with Path params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    }
+]

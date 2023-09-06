@@ -1,0 +1,187 @@
+[{
+    "Id": "PTV100007",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": "this is the chat text"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV100008",
+    "Description": "with empty Path param",
+    "Data": [{
+        "PathParams": {
+            "chatSession": ""
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": "this is the chat text"
+        },
+        "Expected": {
+            "statusCode": 405,
+            "statusDescription": "Method Not Allowed"
+        }
+    }]
+}, {
+    "Id": "PTV100009",
+    "Description": "with Path param that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "specChars"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": "this is the chat text"
+        },
+        "Expected": {
+            "statusCode": 404,
+            "statusDescription": "Invalid Chat Session"
+        }
+    }]
+}, {
+    "Id": "PTV100010",
+    "Description": "with Body field that contains special chars",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": "specChars"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }]
+}, {
+    "Id": "PTV100011",
+    "Description": "without Required Body field",
+    "testData": "invalidBodyField",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "null",
+            "message": "this is the chat text"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": "null"
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "No Message Provided"
+        }
+    }]
+}, {
+    "Id": "PTV100012",
+    "Description": "without all Required Body fields",
+    "testData": "invalidBodyField",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "null",
+            "message": "null"
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "No Message Provided"
+        }
+    }]
+}, {
+    "Id": "PTV100013",
+    "Description": "with empty Body field",
+    "testData": "invalidBodyField",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "",
+            "message": "this is the chat text"
+        },
+        "Expected": {
+            "statusCode": 202,
+            "statusDescription": "Accepted"
+        }
+    }, {
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "You",
+            "message": ""
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "No Message Provided"
+        }
+    }]
+}, {
+    "Id": "PTV100014",
+    "Description": "with all empty Body fields",
+    "testData": "invalidBodyField",
+    "Data": [{
+        "PathParams": {
+            "chatSession": "dynamicValue"
+        },
+        "QueryParams": {
+
+        },
+        "BodyParams": {
+            "label": "",
+            "message": ""
+        },
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "No Message Provided"
+        }
+    }]
+}]

@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "ADV120116",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": ""
+                },
+                "QueryParams": {
+                    "agents": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

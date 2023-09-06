@@ -1,0 +1,299 @@
+[
+    {
+        "Id": "RPV50060",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "businessUnitId,intervalStartDate",
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50061",
+        "Description": "with empty Query param",
+        "Data": [
+            {
+                "TestData": "invalidStartDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "TestData": "invalidEndDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "TestData": "invalidData",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50062",
+        "Description": "without Query param",
+        "Data": [
+            {
+                "TestData": "invalidStartDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "null",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "TestData": "invalidEndDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "TestData": "invalidData",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "null",
+                    "endDate": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50063",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "TestData": "invalidToken",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50064",
+        "Description": "with invalid Query param",
+        "Data": [
+            {
+                "TestData": "invalidStartDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "InvalidDate",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "TestData": "invalidStartDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "02/30/2017",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "TestData": "invalidEndDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "InvalidDate"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "TestData": "invalidEndDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "02/30/2017"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "TestData": "invalidData",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "02/30/2017",
+                    "endDate": "02/30/2017"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "TestData": "endDateBeforeStartDate",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "endDate is before startDate or range has exceeded maximum amount of 6 hours"
+                }
+            },
+            {
+                "TestData": "invalidDateRange",
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "endDate is before startDate or range has exceeded maximum amount of 6 hours"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50065",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "specChar",
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Fields List"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "specChar",
+                    "endDate": "dynamicValue"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "fields": "",
+                    "startDate": "dynamicValue",
+                    "endDate": "specChar"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            }
+        ]
+    }
+]

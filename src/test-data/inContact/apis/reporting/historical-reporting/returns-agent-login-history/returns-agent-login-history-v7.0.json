@@ -1,0 +1,184 @@
+[
+    {
+        "Id": "RPV70055",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": ""
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },   
+    {
+        "Id": "RPV70056",
+        "Description": "with agentId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "2147483648"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "2147483649"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "4294967296"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "-"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentExists"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV70057",
+        "Description": "with numeric agentId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "a"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "z"
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV70058",
+        "Description": "with empty agentId Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": ""
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV70059",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {        
+                },
+                "QueryParams": {
+                    "searchString": "",
+                    "fields": "",
+                    "skip": "1",
+                    "top": "100",
+                    "orderBy": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidParameter"
+                }
+            }
+        ]
+    }   
+]

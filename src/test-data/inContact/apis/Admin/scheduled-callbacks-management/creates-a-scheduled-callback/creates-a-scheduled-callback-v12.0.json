@@ -1,0 +1,25 @@
+[
+    {
+        "Id": "ADV120052",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "",
+                    "skillId": "",
+                    "scheduleDate": "",
+                    "firstName": "",
+                    "lastName": "",
+                    "targetAgentId": "",
+                    "notes": ""
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    }
+]

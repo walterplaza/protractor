@@ -1,0 +1,32 @@
+[
+    {
+        "Id": "PTV120001",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "phoneNumber": "",
+                    "callerId": "",
+                    "callDelaySec": "",
+                    "skill": "", 
+                    "targetAgent": "",
+                    "priorityManagement": "",
+                    "initialPriority": "",
+                    "acceleration": "", 
+                    "maxPriority": "",
+                    "sequence": "",
+                    "zipTone": "",
+                    "screenPopSrc": "",
+                    "screenPopUrl":"",
+                    "timeout":""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

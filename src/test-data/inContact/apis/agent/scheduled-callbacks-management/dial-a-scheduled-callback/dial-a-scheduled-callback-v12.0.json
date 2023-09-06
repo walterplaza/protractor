@@ -1,0 +1,19 @@
+[
+    {
+        "Id": "AGV120051",
+        "Description": "with valid value",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "targetAgentId": ""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

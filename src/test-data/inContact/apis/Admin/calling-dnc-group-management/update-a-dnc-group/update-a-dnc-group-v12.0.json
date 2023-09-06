@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "ADV120140",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "groupId": ""
+                },
+                "QueryParams": {
+                    "dncGroupName": "",
+                    "dncGroupDescription": "",
+                    "isActive": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

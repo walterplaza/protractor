@@ -1,0 +1,182 @@
+[
+    {
+        "Id": "AGV20123",
+        "Description": "with Invalid Query Data Test",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": 123456789
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20124",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20125",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": "Unauthorized"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20126",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": 2147483648
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": -2147483649
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": 4294967296
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": "-"
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20127",
+        "Description": "with numeric contactId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20128",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20129",
+        "Description": "with Path params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    }
+]

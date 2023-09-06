@@ -1,0 +1,489 @@
+[
+    {
+        "Id": "RPV50024",
+        "Description": "with Invalid Query",
+        "testData": "invalidQueryParams",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {          
+                    "startDate": "invalidValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Start Date"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "invalidValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid End Date"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "testData": "invalidQueryParams",
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "invalidValue",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Date Range"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50025",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50026",
+        "Description": "with Invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50027",
+        "Description": "with agentId Path param is invalid Number type",
+        "testData": "invalidAgentId",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "-"
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "2147483648"
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "-2147483649"
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "4294967296"
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50028",
+        "Description": "with numeric agentId Path param that contains alphabet chars",
+        "testData": "invalidAgentId",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "test"
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50029",
+        "Description": "with empty Path param",
+        "testData": "invalidAgentId",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": ""
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50030",
+        "Description": "with Path param contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Agent Id"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50031",
+        "Description": "with invalid Query param",
+        "testData": "invalidQueryParams",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "01/32/2019",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Start Date"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "13/01/2019",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Start Date"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "01/32/2019",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid End Date"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "13/01/2019",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid End Date"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50032",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "specChars",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Start Date"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "specChars",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid End Date"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "4",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50033",
+        "Description": "without Required Query params",
+        "testData": "invalidQueryParams",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "dynamicValue",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Start Date"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "dynamicValue",
+                    "endDate": "null",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid End Date"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV50034",
+        "Description": "without all Required Query params",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null",
+                    "updatedSince": "null",
+                    "mediaTypeId": "null",
+                    "fields": "null",
+                    "skip": "null",
+                    "top": "null",
+                    "orderBy": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid Date Range"
+                }
+            }
+        ]
+    }
+]

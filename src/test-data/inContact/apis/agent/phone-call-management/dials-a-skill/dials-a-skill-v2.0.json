@@ -1,0 +1,145 @@
+[
+    {
+        "Id": "AGV20082",
+        "Description": "with Invalid Query Data",
+        "Data": [
+            {
+                "PathParams": {
+                    "testData": "invalidSessionId",
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidSkillName",
+                    "skillName": "invalid"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid skill."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "testData": "invalidSkillName",
+                    "skillName": ""
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid skill."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20083",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20084",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": ""
+                },
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20085",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20086",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId":"specChars"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "dynamicValue"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20087",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "dynamicValue"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "skillName": "specChars"
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid skill."
+                }
+            }
+        ]
+    }
+]

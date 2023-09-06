@@ -1,0 +1,278 @@
+[{
+        "Id": "RPV30055",
+        "Description": "with valid required information",
+        "Data": [{
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 200,
+                "statusDescription": "Success"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30056",
+        "Description": "with skillId is invalid Number type",
+        "Data": [{
+                "PathParams": {
+                    "skillId": "2147483648"
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid skillId"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": "-2147483649"
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid skillId"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": "4294967296"
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid skillId"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": "-5"
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid skillId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30057",
+        "Description": "with numeric skillId Path param that contains alphabet chars",
+        "Data": [{
+            "PathParams": {
+                "skillId": "testChar"
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Invalid skillId"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30058",
+        "Description": "with empty skillId Path param",
+        "Data": [{
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 200,
+                "statusDescription": "Success"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30059",
+        "Description": "with Path param that contains special chars",
+        "Data": [{
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 404,
+                "statusDescription": "Invalid skillId"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30060",
+        "Description": "with invalid startDate, endDate",
+        "Data": [{
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "13/15/2019",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid startDate"
+            }
+        }, {
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": "13/15/2019"
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "statusDescription": "Invalid endDate"
+            }
+        }]
+    },
+    {
+        "Id": "RPV30061",
+        "Description": "with empty startDate or endDate or all",
+        "Data": [{
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "emptySign"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "emptySign",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30062",
+        "Description": "without startDate or endDate or all",
+        "Data": [{
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid endDate"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid startDate"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV30063",
+        "Description": "with Query param that contains special chars",
+        "Data": [{
+            "PathParams": {
+                "skillId": ""
+            },
+            "QueryParams": {
+                "startDate": "",
+                "endDate": ""
+            },
+            "BodyParams": {},
+            "Expected": {
+                "statusCode": 400,
+                "startDateStatusDescription": "Invalid startDate",
+                "endDateStatusDescription": "Invalid endDate"
+            }
+        }]
+    }
+]

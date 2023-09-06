@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "ADV120065",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "oldPath": "/test/abc.txt",
+                    "newPath": "/abc.txt",
+                    "overwrite": true
+                },
+                "BodyParams": {
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,210 @@
+[{
+    "Id": "RPV10055",
+    "Description": "with Invalid Query Data",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "InvalidDate",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "02/30/2019",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": "InvalidDate"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid End Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": "02/30/2019"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid End Date"
+        }
+    }]
+}, {
+    "Id": "RPV10056",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}, {
+    "Id": "RPV10057",
+    "Description": "with invalid Token",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 401,
+            "statusDescription": "null"
+        }
+    }]
+}, {
+    "Id": "RPV10058",
+    "Description": "with invalid Query param",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "2019-01-32",
+            "endDate": "2019-02-30"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "2019-13-15",
+            "endDate": "2019-13-15"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "2-019-05-30",
+            "endDate": "2-019-05-30"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }]
+}, {
+    "Id": "RPV10059",
+    "Description": "with Query param that contains special chars",
+    "Data": [{
+        "PathParams": {
+
+        },
+        "QueryParams": {
+            "startDate": "",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "startDateStatusDescription": "Invalid Start Date",
+            "endDateStatusDescription": "Invalid End Date"
+        }
+    }]
+}, {
+    "Id": "RPV10060",
+    "Description": "with empty Query param",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": "emptySign"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "emptySign",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid End Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+
+        }
+    }]
+}, {
+    "Id": "RPV10061",
+    "Description": "without Query param",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "null",
+            "endDate": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "",
+            "endDate": "null"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid End Date"
+        }
+    }, {
+        "PathParams": {},
+        "QueryParams": {
+            "startDate": "null",
+            "endDate": "null"
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 400,
+            "statusDescription": "Invalid Start Date"
+
+        }
+    }]
+}]

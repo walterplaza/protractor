@@ -1,0 +1,116 @@
+[
+    {
+        "Id": "AGV20173",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "dynamicValue",
+                    "reason": ""
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20174",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "dynamicValue",
+                    "reason": ""
+                },
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": null
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20175",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "dynamicValue",
+                    "reason": ""
+                },
+                "Expected": {
+                    "statusCode": 405,
+                    "statusDescription": "Method Not Allowed"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20176",
+        "Description": "with Path param that contains special chars ",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "dynamicValue",
+                    "reason": ""
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20177",
+        "Description": "with Body field that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "specChars",
+                    "reason": ""
+                },
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "Invalid state request."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "state": "Available",
+                    "reason": "specChars"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

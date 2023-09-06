@@ -1,0 +1,46 @@
+<style>
+   #btnCollapse {
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      border-bottom: 1px solid #dee2e6;
+      background-color: #f5f5f5;
+   }
+
+   #pnlCollapse {
+      width: 99%;
+   }
+
+   .arrow-toggle .glyphicon-chevron-up,
+   .arrow-toggle.collapsed .glyphicon-chevron-down {
+      display: block;
+      float: right;
+   }
+
+   .arrow-toggle.collapsed .glyphicon-chevron-up,
+   .arrow-toggle .glyphicon-chevron-down {
+      display: none;
+      float: right;
+   }
+
+</style>
+
+<div id="pnlCollapse" class="border rounded m-1">
+   <button class="btn btn-light" id="btnCollapse" type="button" data-toggle="collapse"
+      data-target="#collapseTestCase_${LG_ID}" aria-expanded="false" aria-controls="collapseTestCase">
+      <span data-toggle="tooltip" title=" Build Information">
+         <span class="label ${LG_TEST_STATUS_CLS}"><i class="glyphicon ${LG_CSS_ICO_STATUS}"></i></span>
+         <font class="${LG_TEST_STATUS_CLS_TEXT}">${LG_MAPPED_TITLE}: <b>${LG_SPEC_TEXT}</b></font>
+         <span class="label-container" style="float: right">
+            <span class="badge ${LG_TEST_STATUS_CLS}" title="${LG_TEST_STATUS}">Time elapsed: ${LG_TEST_DURATION} ---
+               ${LG_TEST_STATUS}</span>
+         </span>
+         <span class="arrow-toggle" data-toggle="collapse" data-target="#collapseTestCase" id="inforArrow">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+         </span>
+   </button>
+   <div class="collapse m-1 pl-2" id="collapseTestCase_${LG_ID}" style="width: 99%">
+      ${LG_TEST_DETAIL}
+   </div>
+</div>

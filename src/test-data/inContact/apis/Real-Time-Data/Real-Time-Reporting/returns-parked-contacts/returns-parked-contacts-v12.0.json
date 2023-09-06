@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "RTV120004",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": { 
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+    
+]

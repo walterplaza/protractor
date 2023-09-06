@@ -1,0 +1,96 @@
+[
+    {
+        "Id": "ADV120017",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {},
+                "BodyParams": {
+                    "agents": [
+                        {
+                            "firstName": "",
+                            "middleName": "",
+                            "lastName": "",
+                            "teamId": "",
+                            "reportToId": 1,
+                            "internalId": "",
+                            "profileId": 0,
+                            "roleId": "",
+                            "password": "",
+                            "forceChangeOnLogon": true,
+                            "emailAddress": "",
+                            "userName": "",
+                            "userId": "",
+                            "timeZone": "(GMT-07:00) Arizona",
+                            "country": "",
+                            "state": "",
+                            "city": "",
+                            "chatRefusalTimeout": 15,
+                            "phoneRefusalTimeout": 15,
+                            "workItemRefusalTimeout": 15,
+                            "defaultDialingPattern": 0,
+                            "maxConcurrentChats": 1,
+                            "useTeamMaxConcurrentChats": false,
+                            "isActive": true,
+                            "locationId": 0,
+                            "notes": "",
+                            "hireDate": "10/10/1800",
+                            "terminationDate": "10/10/1800",
+                            "hourlyCost": 0,
+                            "rehireStatus": true,
+                            "employmentType": 1,
+                            "referral": "",
+                            "atHome": false,
+                            "hiringSource": 0,
+                            "ntLoginName": "",
+                            "custom1": "",
+                            "custom2": "",
+                            "custom3": "",
+                            "custom4": "",
+                            "custom5": "",
+                            "scheduleNotification": 0,
+                            "federatedId": "",
+                            "maxEmailAutoParkingLimit": 1,
+                            "useTeamEmailAutoParkingLimit": false,
+                            "sipUser": "",
+                            "systemUser": "",
+                            "systemDomain": "",
+                            "crmUserName": "",
+                            "useAgentTimeZone": false,
+                            "timeDisplayFormat": 0,
+                            "sendEmailNotifications": false,
+                            "apiKey": "",
+                            "telephone1": "",
+                            "telephone2": "",
+                            "userType": "",
+                            "isWhatIfAgent": false,
+                            "requestContact": false,
+                            "useTeamRequestContact": false,
+                            "chatThreshold": 1,
+                            "useTeamChatThreshold": false,
+                            "emailThreshold": 1,
+                            "useTeamEmailThreshold": false,
+                            "workItemThreshold": 1,
+                            "useTeamWorkItemThreshold": false,
+                            "contactAutoFocus": false,
+                            "useTeamContactAutoFocus": false,
+                            "subject": "",
+                            "issuer": "",
+                            "isOpenIdProfileComplete": false,
+                            "recordingNumbers": [
+                                {
+                                "number": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

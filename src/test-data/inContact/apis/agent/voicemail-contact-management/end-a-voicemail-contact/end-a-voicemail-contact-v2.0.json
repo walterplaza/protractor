@@ -1,0 +1,151 @@
+[
+    {
+        "Id": "AGV20107",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20106",
+        "Description": "with Invalid Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": 123456789
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20108",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": "Unauthorized"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20109",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "contactId": 123456789
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20110",
+        "Description": "with numeric contactId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20111",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "resource not found"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20112",
+        "Description": "with Path params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    }
+]

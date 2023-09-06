@@ -1,0 +1,212 @@
+[
+    {
+        "Id": "RTV50018",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50020",
+        "Description": "with invalid mediaTypeId Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "2147483649",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "-2147483649",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "4294967296",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50019",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50021",
+        "Description": "with numeric Query param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "invalid123",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50022",
+        "Description": "with invalid updatedSince Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": "02-30-2018"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": "13-15-2018"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50023",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "4",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV50017",
+        "Description": "with Invalid Query",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "invalidIsOutbound",
+                    "fields": "",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeId": "",
+                    "isOutbound": "",
+                    "fields": "invalidFields",
+                    "updatedSince": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidProperty"
+                }
+            }
+        ]
+    }
+]

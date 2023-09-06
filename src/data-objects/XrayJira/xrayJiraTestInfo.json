@@ -1,0 +1,16 @@
+{
+    "ProjectKey": "IC",
+    "TestPlanKey": "IC-77711",
+    "TestSetKey":"IC-77702",
+    "TestCaseKey": "",
+    "Cluster": "HC25",
+    "Browser": "Chrome",
+    "GBU": "MaxInternalGBU",
+    "TenantName": "",
+    "TestAgent": "QAA50",
+    "TestExecutionKey": "",
+    "TestExecutionTitle": "Demo",
+    "Version": "",
+    "Revision": "",
+    "Release": ""
+}

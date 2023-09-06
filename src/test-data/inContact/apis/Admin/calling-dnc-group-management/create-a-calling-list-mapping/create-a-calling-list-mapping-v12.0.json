@@ -1,0 +1,39 @@
+[{
+    "Id": "ADV120152",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {},
+        "QueryParams": {
+            "listName": "",
+            "listExpirationDate": "",
+            "externalIdColumn": "",
+            "scoreColumn": "",
+            "customer1Column": "",
+            "customer2Column": "",
+            "callerIdColumn": "",
+            "priorityColumn": "",
+            "complianceReqColumn": "",
+            "firstNameColumn": "",
+            "lastNameColumn": "",
+            "addressColumn": "",
+            "cityColumn": "",
+            "stateColumn": "",
+            "zipColumn": "",
+            "timeZoneColumn": "",
+            "confirmReqColumn": "",
+            "overrideFinalizationColum": "",
+            "agentIdColumn": "",
+            "callRequestTimeColumn": "",
+            "callRequestStaleColumn": "",
+            "notesColumn": "",
+            "expirationDateColumn": "",
+            "destinationMappings": "",
+            "customFieldMappings": ""
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Calling List created and mapped"
+        }
+    }]
+}]

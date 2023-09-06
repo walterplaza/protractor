@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "AD1537",
+        "Description": "Happy Path",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": "Happy Pass"
+                },
+                "QueryParams": {
+                    "startDate": "01/16/2019",
+                    "endDate": "01/19/2019"
+                },
+                "BodyParams": {}
+            }
+        ],
+        "Expected": {
+            "statusCode": "200",
+            "statusDescription": "",
+            "Error": ""
+        }
+    }
+]

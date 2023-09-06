@@ -1,0 +1,238 @@
+[
+    {
+        "Id": "AGV20145",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20143",
+        "Description": "with invalid session id",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "invalidSessionId",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20144",
+        "Description": "with invalid contact id",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": 12345671111
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20146",
+        "Description": "with invalid token",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20147",
+        "Description": "with contactId Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "9,223,372,036,854,775,808"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "9,223,372,036,854,775,809"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20148",
+        "Description": "with numeric contactId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "87779536bsdfs"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidContactId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20149",
+        "Description": "with empty Path params",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20150",
+        "Description": "with Path params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "specChars",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid agent session Id."
+                }
+            },
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": "specChars"
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "Invalid Contact Id."
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20151",
+        "Description": "with Body params that contain special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": "",
+                    "contactId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "chatText": "Automation test"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

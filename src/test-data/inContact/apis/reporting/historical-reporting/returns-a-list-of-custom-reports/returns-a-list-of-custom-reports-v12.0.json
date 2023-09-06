@@ -1,0 +1,15 @@
+[{
+    "Id": "RPV120020",
+    "Description": "with valid required information",
+    "Data": [{
+        "PathParams": {
+        },
+        "QueryParams": {
+        },
+        "BodyParams": {},
+        "Expected": {
+            "statusCode": 200,
+            "statusDescription": "Success"
+        }
+    }]
+}]

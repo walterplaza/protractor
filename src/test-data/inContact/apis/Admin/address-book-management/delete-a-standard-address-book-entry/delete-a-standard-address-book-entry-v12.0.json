@@ -1,0 +1,20 @@
+[
+    {
+        "Id": "ADV120011",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "addressBookId": "",
+                    "addressBookEntryId": ""
+                },
+                "QueryParams": {},
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Accepted"
+                }
+            }
+        ]
+    }
+]

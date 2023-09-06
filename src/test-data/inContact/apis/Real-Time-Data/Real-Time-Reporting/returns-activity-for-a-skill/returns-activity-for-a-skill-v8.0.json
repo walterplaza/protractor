@@ -1,0 +1,240 @@
+[
+    {
+        "Id": "RTV80019",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80020",
+        "Description": "with skillid Path param is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": "2147483648"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": "-2147483649"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": "4294967296"
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidSkillId"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidSkillId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80021",
+        "Description": "with numeric skillId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80022",
+        "Description": " with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80023",
+        "Description": " with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80024",
+        "Description": "with invalid updatedSince",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "01/32/2018",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "02/30/2018",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "20/13/2018",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "30.01.2018",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RTV80025",
+        "Description": " with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidUpdatedSince"
+                }
+            },
+            {
+                "PathParams": {
+                    "skillId": ""
+                },
+                "QueryParams": {
+                    "updatedSince": "",
+                    "fields": "businessUnitId"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidProperty"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "Id": "AGV20005",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "forceLogoff": "",
+                    "endContacts": "",
+                    "ignorePersonalQueue": ""
+                },
+               "BodyParams": {},
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20006",
+        "Description": "with invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                   "forceLogoff": "",
+                    "endContacts": "",
+                    "ignorePersonalQueue": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20007",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "sessionId": ""
+                },
+                "QueryParams": {
+                    "forceLogoff": "",
+                    "endContacts": "",
+                    "ignorePersonalQueue": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20008",
+        "Description": "with Path param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "forceLogoff": "",
+                    "endContacts": "",
+                    "ignorePersonalQueue": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "AGV20009",
+        "Description": "with invalid Query Param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "forceLogoff": "",
+                   "endContacts": "",
+                    "ignorePersonalQueue": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentSession"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,343 @@
+[
+    {
+        "Id": "RPV20196",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20197",
+        "Description": "with Invalid Token",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 401,
+                    "statusDescription": ""
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20198",
+        "Description": "with agentId is invalid Number type",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "2147483648"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "-2147483649"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "4294967296"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "-"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20199",
+        "Description": "with numeric agentId Path param that contains alphabet chars",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": "a"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            },
+            {
+                "PathParams": {
+                    "agentId": "x"
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20200",
+        "Description": "with empty Path param",
+        "Data": [
+            {
+                "PathParams": {
+                    "agentId": ""
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20201",
+        "Description": "with Path param contains special chars",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 404,
+                    "statusDescription": "InvalidAgentId"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20202",
+        "Description": "with invalid Query param",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "a",
+                    "endDate": "",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidStartDate"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "1",
+                    "endDate": "",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidStartDate"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "y",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidEndDate"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "0",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidEndDate"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "mediaTypeName": "Chata"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidMediaTypeName"
+                }
+            },
+            {
+                "PathParams": {
+                },
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "mediaTypeName": "Chat1"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidMediaTypeName"
+                }
+            }
+        ]
+    },
+    {
+        "Id": "RPV20203",
+        "Description": "with Query param that contains special chars",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidStartDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "endDate": "",
+                    "mediaTypeName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidEndDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "mediaTypeName": "Chat"
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidMediaTypeName"
+                }
+            }
+        ]
+    },
+    { 
+        "Id": "RPV20204",
+        "Description": "without Required Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "mediaTypedName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidStartDate"
+                }
+            },
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "endDate": "null",
+                    "mediaTypedName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidEndDate"
+                }
+            }          
+        ]
+    },
+    { 
+        "Id": "RPV20205",
+        "Description": "without All Required Query param",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "null",
+                    "endDate": "null",
+                    "mediaTypedName": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 400,
+                    "statusDescription": "InvalidStartDate"
+                }
+            }    
+        ]
+    }
+]

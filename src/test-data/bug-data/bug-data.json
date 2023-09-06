@@ -1,0 +1,1757 @@
+[
+    {
+        "BugIdJira": "IC-16798",
+        "BugIdTFS": "443089",
+        "BugDescription": "Max Agent Call duration time is overlapped with phone number under Call history",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "443015"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5811",
+        "BugIdTFS": "428345",
+        "BugDescription": "Divider bar is not displayed between agent and panel when agent has an active contact on MAX window (MAX has persistent panels)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "304797",
+                    "291897",
+                    "291898",
+                    "291899",
+                    "291900",
+                    "304797",
+                    "301939",
+                    "301937",
+                    "301936",
+                    "301935",
+                    "301940",
+                    "301943"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29684",
+        "BugIdTFS": "449687",
+        "BugDescription": "The size (width) of contact panel/quick replies panel is not exactly 290px by default",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "443654",
+                    "443659",
+                    "IC-101240",
+                    "420012"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29647",
+        "BugIdTFS": "450399",
+        "BugDescription": "Wrong URL displays when launching help page in central page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "445127"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29798",
+        "BugIdTFS": "421712",
+        "BugDescription": "MAX's help page doesn't exist",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "445127"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30192",
+        "BugIdTFS": "393918",
+        "BugDescription": "Parked email show Quick Reply Panel including option to 'Insert' text",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101258"
+                ],
+                "TestcaseError": [
+                    "The options Insert is appeared"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5765",
+        "BugIdTFS": "438302",
+        "BugDescription": "Email is not stored in personal queue when the agent's state is unavailable and email was sent to agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62686",
+                    "291486",
+                    "249265",
+                    "IC-101278"
+                ],
+                "TestcaseError": [
+                    "Email is not moved to the Personal Queue",
+                    "we need to figure out the way to test Personal Queue, the actual scripts is not covering this scenario",
+                    "Email is not moved to the Personal Queue of the Agents after unparking"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30149",
+        "BugIdTFS": "405993",
+        "BugDescription": "Failed to login to the Sonus gateway when using softphone - Failed to connect to Agent Leg",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "277645",
+                    "277647",
+                    "277648",
+                    "277730",
+                    "277731",
+                    "IC-62707",
+                    "297144",
+                    "270939"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "This ticket is closed on TFS: 423956",
+        "BugIdTFS": "423956",
+        "BugDescription": "Persistent panel will be removed in the future. Max window's width does not equal to 600 pixels when having the Persistent Panel",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "302476"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30163",
+        "BugIdTFS": "427973",
+        "BugDescription": "Defer by ticket 427973 - We don't have the PC support artifacts in the GBU we need yet. Please defer these tests.",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "277732"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-16974",
+        "BugIdTFS": "430996",
+        "BugDescription": "Agent cannot click Accept button to receive call when having call from other agent for the first time on MAX window",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "249151"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30006",
+        "BugIdTFS": "429512",
+        "BugDescription": "Could not dial the Agent Leg in https://home-to31.test.nice-incontact.com/inContact/Default.aspx",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448769",
+                    "410934"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5762",
+        "BugIdTFS": "437394",
+        "BugDescription": "Play button of internal session is disabled in Search page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448769",
+                    "410934",
+                    "448761",
+                    "410560"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29874",
+        "BugIdTFS": "447472",
+        "BugDescription": "Internal session is not displayed in Search page when making inbound call by using API",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448761",
+                    "410560"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29866",
+        "BugIdTFS": "449547",
+        "BugDescription": "Unexpected error message Uh Oh displays when receiving inbound call",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448761",
+                    "410560"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29852",
+        "BugIdTFS": "449871",
+        "BugDescription": "Unable to make inbound call by using API v2.0/agent-sessions/{sessionId}/dial-skill in Evolve environments",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448761",
+                    "410560"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29854",
+        "BugIdTFS": "449950",
+        "BugDescription": "New status is displayed in My Evaluations page instead of Pending Acknowledgement status",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "410560",
+                    "410934"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29842",
+        "BugIdTFS": "450963",
+        "BugDescription": "Session is not displayed in Search page when making outbound call",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "410934",
+                    "448769"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29635",
+        "BugIdTFS": "451824",
+        "BugDescription": "Wrong error message is displayed when inputting invalid number to Maximum Wait Time to Consider textbox",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "369010",
+                    "IC-101266"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29670",
+        "BugIdTFS": "451827",
+        "BugDescription": "Wrong error message is displayed when entering non-integer value in the Max # of calls textbox",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62648",
+                    "IC-62645"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29835",
+        "BugIdTFS": "451952",
+        "BugDescription": "The width of contact section (WorkItem, Chat or Inbound Call) isn't 312px by default",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "416377",
+                    "444255",
+                    "455031",
+                    "416372",
+                    "423238",
+                    "IC-101235",
+                    "442408",
+                    "IC-101238",
+                    "443695",
+                    "443712",
+                    "IC-101234"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29632",
+        "BugIdTFS": "454934",
+        "BugDescription": "Chat workspace is not resized correctly when receiving multiple chat contacts",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "249301",
+                    "446757",
+                    "IC-62611",
+                    "IC-101234",
+                    "410301"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29838",
+        "BugIdTFS": "452077",
+        "BugDescription": "Agent name of session making by inbound call is displayed in the wrong position on Search page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "450555"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29705",
+        "BugIdTFS": "454939",
+        "BugDescription": "Regarding to MAX setting,  Persistent Panels setting is changed to Quick Links on HC5, could you help us check that?",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "291897",
+                    "291898",
+                    "291899",
+                    "291900",
+                    "295406",
+                    "302367",
+                    "302476",
+                    "444255",
+                    "301939",
+                    "310905"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29706",
+        "BugIdTFS": "455362",
+        "BugDescription": "Disposition window doesn't display when ending required or non required disposition inbound call",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101262",
+                    "IC-101261",
+                    "392848",
+                    "IC-62596",
+                    "417154",
+                    "426868",
+                    "IC-101256"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-28831",
+        "BugIdTFS": "455859",
+        "BugDescription": "Screen pop is not displayed although it was enabled in OBPhone skill",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "445449",
+                    "444312"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29637",
+        "BugIdTFS": "422045",
+        "BugDescription": "MAX's call history doesn't show inbound contact information",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "301920",
+                    "IC-101273",
+                    "437377",
+                    "443016",
+                    "301920"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29642",
+        "BugIdTFS": "456639",
+        "BugDescription": "The record of Agent_Time column equal to zero",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "436494",
+                    "377006"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29669",
+        "BugIdTFS": "456640",
+        "BugDescription": "The report 350145 is different from report 350048 with Today date range.",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "436491"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29689",
+        "BugIdTFS": "456644",
+        "BugDescription": "Login date data in Agent Time Card page and User Login History page doesn't match",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "434910"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29815",
+        "BugIdTFS": "455858",
+        "BugDescription": "Chat content with html tags has line breaks when sending some text with carriage return in chat conversation",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "416426",
+                    "IC-101270"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5799",
+        "BugIdTFS": "443081",
+        "BugDescription": "Empty space displays while making an inbound call",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "419908"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5866",
+        "BugIdTFS": "412876",
+        "BugDescription": "500-Internal server error is returned when calling the API v3.0 GET /agents/performance with invalid startDate and endDate",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "433426",
+                    "412226",
+                    "430972",
+                    "430974",
+                    "430975"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5813",
+        "BugIdTFS": "430966",
+        "BugDescription": "The status code 405 - Method Not Allowed is returned instead of 400 when calling API v2.0/agent-sessions/{sessionId}/dial-phone with sessionId is empty",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "420105",
+                    "419479",
+                    "420491",
+                    "419793",
+                    "418815",
+                    "411813",
+                    "418397",
+                    "420924",
+                    "411839",
+                    "417597",
+                    "411825",
+                    "418384",
+                    "411832",
+                    "410842",
+                    "420125",
+                    "419782",
+                    "420501",
+                    "432828",
+                    "432829",
+                    "441696",
+                    "441707",
+                    "417617"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "TFS - 406448",
+        "BugIdTFS": "406448",
+        "BugDescription": "Status code 500-Internal server error is returned when calling the API v1.0,3.0/contacts/chats/{chatSession} with invalid chatSession value.",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "411917",
+                    "411918"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-5768",
+        "BugIdTFS": "440653",
+        "BugDescription": "Status code 202 - Accepted is returned when calling API POST v4.0/agent-sessions/{sessionId}/interactions/{contactId}/email-reply with toAddress or fromAddress field that contains special chars",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "440611",
+                    "440613",
+                    "440656"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30017",
+        "BugIdTFS": "414753",
+        "BugDescription": "Invalid status description is returned when calling API POST v6.0/lists/call-lists/{listId}/upload with empty listId Path param",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "415458",
+                    "451459"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-26934",
+        "BugIdTFS": "459101",
+        "BugDescription": "[TestAutomation][NICE-UI] 404 Not Found error displays when opening MAX help page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "434473",
+                    "445127"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30162",
+        "BugIdTFS": "459532",
+        "BugDescription": "[TestAutomation][inC-UI] The Agent Softphone (Requires MAX) feature is not enabled by default in BU and Security Profiles",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "406409",
+                    "406411"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-26521",
+        "BugIdTFS": "459539",
+        "BugDescription": "[TestAutomation][NICE-UI] MAX stops sending connect request after only 8 minutes instead of 20 minutes",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "430292",
+                    "429483"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "TFS - 433823",
+        "BugIdTFS": "433823",
+        "BugDescription": "Evolve> MAX> Pending Messages >Message counter for unread messages is not displaying on the Messages button",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "429692",
+                    "430026"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29832",
+        "BugIdTFS": "460044",
+        "BugDescription": "[TestAutomation][inC-API]  Status Code 404: invalid teamId - {teamid} is returned when calling GET v10 /teams/{teamid} request with valid teamid.",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "338558",
+                    "338574"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29654",
+        "BugIdTFS": "460736",
+        "BugDescription": "[TestAutomation][NICE-UI] Unavailable code is not truncated with an end-ellipsed on MAX main state drop down",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "438054",
+                    "438066"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29841",
+        "BugIdTFS": "460481",
+        "BugDescription": "[TestAutomation][inC-API] The response content is returned unexpectably when calling GET v9.0/business-unit/max-settings",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "299622"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29808",
+        "BugIdTFS": "459606",
+        "BugDescription": "Max voicemail workspace size does not equal the default size (312px)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "444306",
+                    "IC-62597",
+                    "444154",
+                    "443712",
+                    "443654",
+                    "443659",
+                    "IC-101240",
+                    "420012",
+                    "443696",
+                    "443695",
+                    "IC-101234"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29695",
+        "BugIdTFS": "461356",
+        "BugDescription": "No primary disposition data is recorded after making inbound call with required disposition",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101256"
+                ],
+                "TestcaseError": [
+                    "Primary disposition data does not display"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30150",
+        "BugIdTFS": "460491",
+        "BugDescription": "[TestAutomation][inC-API] Status Code 200 is returned when calling POST v9/agents request with maxConcurrentChats value is out of range 1-8",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "294691",
+                    "295190",
+                    "461697",
+                    "461687"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29859",
+        "BugIdTFS": "461249",
+        "BugDescription": "[TestAutomation][inC-API] The error description  is returned unexpectedly when calling POST v10.0/agent-sessions/{sessionId}/consult-agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "363266"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29644",
+        "BugIdTFS": "461652",
+        "BugDescription": "[TestAutomation][NICE-UI] Regarding to TC 413301, we are unable to find the information related to agent with low rated which is available on Agent Scoring widget",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "413301"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29675",
+        "BugIdTFS": "448937",
+        "BugDescription": "[TestAutomation][inC-UI] Unavailable time of Agent Productivity report and Agent Unavailable Time report are not m",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "436491"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30159",
+        "BugIdTFS": "461938",
+        "BugDescription": "[TestAutomation][inC-API] Status code 201 is returned instead of 400 while calling POST v4 /lists/call-lists with empty externalIdColumn requried field",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "444369",
+                    "444379"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29652",
+        "BugIdTFS": "410173",
+        "BugDescription": "[Won't Fix][TestAutomation] The API GET /teams/{teamId}/performance-total returns successfully with invalid team id",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "443078",
+                    "443079",
+                    "443066",
+                    "443067",
+                    "443063",
+                    "443044",
+                    "443041"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29789",
+        "BugIdTFS": "462258",
+        "BugDescription": "[TestAutomation] [inC-API] Status code 204 is returned when calling API GET V7.0/contacts/{contactId}/email-transcript with required valid information",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "444391"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29700",
+        "BugIdTFS": "462805",
+        "BugDescription": "There is wrong tooltip displayed after hovering over the filled phone number field in schedule commitment",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "443011"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30596",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Callback isn't initiated through MAX with the patron after agent selects a skill and calls the customer back",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "297154",
+                    "297153",
+                    "298747"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29331",
+        "BugIdTFS": "",
+        "BugDescription": "'Open WFO' button is missing for each notification",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "438766",
+                    "438755"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-33289",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][NICE-UI] The Evolve QM checkbox should be displayed and checked in the Select Features page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "448730",
+                    "448753"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29821",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Visual notification is not displayed when End chat or Call visual notifications is enabled",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "250688",
+                    "250689",
+                    "250690",
+                    "250691",
+                    "250696",
+                    "250701",
+                    "250709",
+                    "IC-62651",
+                    "432893",
+                    "432899",
+                    "250708"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-39771",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The email server popup still displays after submitting when editing business unit",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "269813",
+                    "277645",
+                    "277647",
+                    "277648",
+                    "277730",
+                    "277731",
+                    "IC-62707",
+                    "366937",
+                    "366938",
+                    "456981",
+                    "341359",
+                    "461348",
+                    "461350",
+                    "461352",
+                    "461354",
+                    "270939",
+                    "269811"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-39770",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The softphone check box is disabled when launching MAX agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "269813",
+                    "277645",
+                    "277647",
+                    "277648",
+                    "277730",
+                    "277731",
+                    "IC-62707",
+                    "269811"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-39870",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The voicemail cannot be routed to agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "389469",
+                    "IC-62692",
+                    "444316",
+                    "414240",
+                    "367834",
+                    "418784",
+                    "445450",
+                    "444306",
+                    "444154",
+                    "437388",
+                    "415641",
+                    "414261",
+                    "416372",
+                    "IC-62597",
+                    "IC-62690",
+                    "455481",
+                    "IC-62623",
+                    "IC-62627",
+                    "IC-62625",
+                    "IC-62594",
+                    "335690",
+                    "335685",
+                    "392890",
+                    "392870",
+                    "392875",
+                    "433739",
+                    "IC-62652",
+                    "IC-62653",
+                    "AGV120013",
+                    "AGV120014",
+                    "AGV120015",
+                    "AGV120016",
+                    "AGV120017"
+                ],
+                "TestcaseError": [
+                    "Agent status doesn't change to Working",
+                    "Voice mail isn't created and accepted",
+                    "Voice mail contact is not in queue",
+                    "Voicemail is not routed to Agents Queue",
+                    "Voice mail workspace is not displayed",
+                    "Back button is not displayed",
+                    "API failed: No Contacts for the specified period."
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-39958",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] ACW timer does not display when ending contact with Non-Required Disposition (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "444306",
+                    "IC-101236",
+                    "IC-101247",
+                    "443297",
+                    "414261",
+                    "415641",
+                    "IC-62578",
+                    "455881",
+                    "301969",
+                    "IC-101237"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40034",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Screen pop is not displayed for inbound skills (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "249442",
+                    "IC-101284",
+                    "IC-101283",
+                    "IC-101290",
+                    "443998",
+                    "367839"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40030",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The error message displays when editing skills in detail tab",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "392848",
+                    "419184",
+                    "249442",
+                    "IC-101284",
+                    "IC-101283",
+                    "IC-101285"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40138",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The color of disposition check box is inconsistent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101269"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40137",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] OB phone required disposition skill is not set for obphonechatvoicemailrequired3 account",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "389468"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40233",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Max Talk Time column does not have data after running Outbound Agent Performance Report",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "417241"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-16864",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation] Agent is unable to route the contact items(chat, workitem) created by API after setting status to Available in UI",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62608"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40240",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Email is not interrupted by Chat (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101244",
+                    "IC-101242"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-40243",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] IB Phone takes long time to interrupt IB or OB Email (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "443849",
+                    "IC-101243",
+                    "IC-101290",
+                    "IC-101227",
+                    "391822",
+                    "IC-101286",
+                    "249399",
+                    "455022",
+                    "IC-62601",
+                    "IC-62679",
+                    "249402",
+                    "422767",
+                    "249405",
+                    "IC-101289"
+                ],
+                "TestcaseError": [
+                    "Call workspace doesn't display",
+                    "Call is not in queue in 40s"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-42513",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The agent next state is not displayed when rejecting a chat",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "344981",
+                    "IC-62644",
+                    "IC-101268",
+                    "369351"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-29811",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The workitem status does not keep state Holding after ending email contact",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "399525"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-42641",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Chat workspace is overlapped when expanding quick reply panel (HC10)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101233"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-30204",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation] Status code 500-Internal server error is returned when calling the API v1.0,3.0/contacts/chats/{chatSession} with invalid chatSession value",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "411917"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-72799",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The error message displays when creating new report in Extensible Reports (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "370946",
+                    "370955"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-84617",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Add New popover is not displayed on MAX when assigning both OBPhone and OBMail skills in one agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62668",
+                    "IC-62667"
+                ],
+                "TestcaseError": []
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-96400",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The OB Email contact state keeps Interrupted instead of Active after ending IB Phone contact",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "249401",
+                    "249406",
+                    "249444",
+                    "IC-62601",
+                    "249445",
+                    "IC-101290",
+                    "IC-101286",
+                    "IC-101284",
+                    "422767",
+                    "IC-101283"
+                ],
+                "TestcaseError": [
+                    "The Email workspace isn't displayed completely",
+                    "No element found using locator: By(xpath, //div[@class='dialog-contents']//button[@class='confirm-button'])",
+                    "Email work space is not displayed",
+                    "Email window is not displayed",
+                    "The Agent does not display the OB Email items"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-96955",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] An additional chat contact popup is displayed when a new chat contact is rejected after it meets the refusal timeouts",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101268"
+                ],
+                "TestcaseError": [
+                    "The chat dialog does not close"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-98284",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The chat message exceeds 80% of chat area",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101265",
+                    "IC-101252"
+                ],
+                "TestcaseError": [
+                    "exceeds 80% of the chat area"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-97060",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] An error popup displays after clicking Call button on Commitment popup (SC1)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101282"
+                ],
+                "TestcaseError": [
+                    "Call workspace doesn't display"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-99091",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The MAX container is crashed after refreshing MAX and immediately click on schedules button",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101271",
+                    "IC-101292"
+                ],
+                "TestcaseError": [
+                    "undefined"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-100003",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Cannot back to email workspace when inbound phone is interrupting email",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101227"
+                ],
+                "TestcaseError": [
+                    "media-icon-shade"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "In the separated email",
+        "BugIdTFS": "",
+        "BugDescription": "No editable Security Profile",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101266"
+                ],
+                "TestcaseError": [
+                    "secProfileNameColumn wordWrap"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-93092",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Reconnected popup with Connection re-established is displayed when a chat contact exceeded timeout",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101302",
+                    "IC-101272",
+                    "IC-101270",
+                    "IC-101269",
+                    "IC-101268",
+                    "IC-101267",
+                    "IC-101265",
+                    "IC-101264",
+                    "IC-101244",
+                    "IC-101242",
+                    "IC-101240",
+                    "IC-101239",
+                    "IC-101234",
+                    "IC-101233",
+                    "455444",
+                    "IC-62620",
+                    "395640",
+                    "IC-62595",
+                    "IC-62684",
+                    "224847",
+                    "426876",
+                    "249390",
+                    "IC-62631",
+                    "IC-62685",
+                    "IC-62639",
+                    "IC-101298"
+                ],
+                "TestcaseError": [
+                    "//div[@id='agentStateSection']//div[@class='state-body']//span[@class='current-state']",
+                    "No element found using locator: By(xpath, //button[@class='accept'])",
+                    "The element By(xpath, //div[@class='chat-contact-ui chatcontactui' and @data-status='Active']//textarea[contains(@class,'message-text-input')]) could not be located on the page",
+                    "No element found using locator: By(xpath, //div[contains(@class,'chatcontactsummaryui')]",
+                    "NoSuchElementError - The element By(xpath, //div[@id='chatWorkspace']) could not be located on the page",
+                    "NoSuchElementError - The element By(xpath, //button[@class='contact-panel-toggle']) could not be located on the page",
+                    "NoSuchElementError - The element By(xpath, //div[@id='glanceActiveContact']/div[@id='chatGlanceSection']//div[@class='chat-multi-glance-ui chatmultiglanceui']//*[name()='svg'][contains(@class,'chat')]) could not be located on the page",
+                    "NoSuchElementError - The element By(xpath, //div[@class='chat-contact-ui chatcontactui' and @data-status='Active']//button[@class = 'end-contact']) could not be located on the page",
+                    "NoSuchElementError - The element By(xpath, //div[@class='chat-contact-ui chatcontactui' and @data-status='Active']//textarea[contains(@class,'message-text-input')]) could not be located on the page",
+                    "Second chat is not created",
+                    "NoSuchElementError - The element By(xpath, //div[@class='toggle-acw-button']) could not be located on the page",
+                    "NoSuchElementError - The element By(xpath, //div[@class='chat-contact-ui chatcontactui' and @data-status='Active']//button[@class = 'end-contact']) could not be located on the page"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-101160",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-API] Status code 400 - invalid_request - ActivePOC is returned when calling the API 'PUT v13.0/skills/{skillId}' with valid skillid and body params (HC25)",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101302",
+                    "IC-101299",
+                    "IC-101297",
+                    "IC-101296",
+                    "IC-101290",
+                    "IC-101289",
+                    "IC-101287",
+                    "IC-101286",
+                    "IC-101285",
+                    "IC-101284",
+                    "IC-101283",
+                    "IC-101281",
+                    "IC-101280",
+                    "IC-101279",
+                    "IC-101278",
+                    "IC-101276",
+                    "IC-101273",
+                    "IC-101272",
+                    "IC-101270",
+                    "IC-101269",
+                    "IC-101268",
+                    "IC-101267",
+                    "IC-101265",
+                    "IC-101264",
+                    "IC-101263",
+                    "IC-101262",
+                    "IC-101261",
+                    "IC-101260",
+                    "IC-101259",
+                    "IC-101258",
+                    "IC-101256",
+                    "IC-101255",
+                    "IC-101254",
+                    "IC-101253",
+                    "IC-101252",
+                    "IC-101247",
+                    "IC-101246",
+                    "IC-101245",
+                    "IC-101244",
+                    "IC-101243",
+                    "IC-101242",
+                    "IC-101240",
+                    "IC-101239",
+                    "IC-101238",
+                    "IC-101236",
+                    "IC-101235",
+                    "IC-101234",
+                    "IC-101233",
+                    "IC-101227",
+                    "IC-101232",
+                    "IC-101231",
+                    "IC-101230",
+                    "IC-101229",
+                    "IC-101228",
+                    "IC-101226",
+                    "IC-101225",
+                    "IC-101298",
+                    "AGV120005",
+                    "AGV120056",
+                    "AGV120007",
+                    "AGV120061",
+                    "AGV120012",
+                    "RPV120009",
+                    "AGV120048",
+                    "ADV120108",
+                    "AGV120055",
+                    "AGV120006",
+                    "AGV120026",
+                    "AGV120064",
+                    "PTV120005",
+                    "AGV120016",
+                    "ADV120047",
+                    "AGV120011",
+                    "AGV120037",
+                    "AGV120046",
+                    "ADV120130",
+                    "RTV120003",
+                    "AGV120010",
+                    "PTV120001",
+                    "AGV120025",
+                    "AGV120054",
+                    "AGV120050",
+                    "AGV120060",
+                    "AGV120008",
+                    "RPV120005",
+                    "ADV120166",
+                    "PTV120008",
+                    "AGV120027",
+                    "AGV120047",
+                    "AGV120049",
+                    "AGV120038",
+                    "ADV120127",
+                    "AGV120020",
+                    "ADV120092"
+                ],
+                "TestcaseError": [
+                    "Return status code: 400 - ActivePOC",
+                    "Cannot read property 'createPhoneNumber' of undefined",
+                    "Cannot read property 'randomPhoneNumber' of undefined"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-101633",
+        "BugIdTFS": "",
+        "BugDescription": "Agent with one OB Phone skill when it makes an Outbound call, it is seeing a drop down",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-58724",
+                    "IC-58728",
+                    "IC-58730",
+                    "IC-58726"
+                ],
+                "TestcaseError": [
+                    "By(xpath, //button[@class='record' or @class='record disabled'])"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-104544",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][CxOne-UI] WFO menu doesn't displayed when accessing to WFO from Launch button at Message since the second time",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-69253"
+                ],
+                "TestcaseError": [
+                    "javascript error"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-104934",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][CXone-UI] Email body is not displayed on NICE SaasS player",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-58715"
+                ],
+                "TestcaseError": [
+                    "Email body is not displayed"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-105216",
+        "BugIdTFS": "",
+        "BugDescription": " [TestAutomation][CXone-UI] The custom category ‘Greeting’ is not displayed in Category column",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-58604"
+                ],
+                "TestcaseError": [
+                    "The category is not displayed the custom category ‘Greeting’"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "MCR-2864",
+        "BugIdTFS": "",
+        "BugDescription": " IN CXONE> DO33 Search page is not finding Information.",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-63296",
+                    "IC-63290",
+                    "IC-63283",
+                    "IC-63277"
+                ],
+                "TestcaseError": [
+                    "By(xpath, (//div[contains (@class,'ag-row-even ag-row-level') and div[.//div[text()='managerOBPhone MaxGBU']]])",
+                    "By(xpath, //div[@col-id='agentNames']//div[text()='managerOBPhone MaxGBU']/ancestor::div[contains(@class,'ag-row ag-row')])"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-107445",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][CXone-UI] Error page is displayed when resetting password",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-65937"
+                ],
+                "TestcaseError": [
+                    "By(xpath, //input[@ng-model='$parent.searchCriteria'])"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-77048",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Chat is not stored in personal in queue when the agent's state is available and chat was sent to agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62640"
+                ],
+                "TestcaseError": [
+                    "Glance does not show the chat in Personal Queue"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-27447",
+        "BugIdTFS": "",
+        "BugDescription": "TestAutomation][inC-UI] 'Save and Callback' button does not exist when ending call on MAX as expected result of some test cases",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-62661"
+                ],
+                "TestcaseError": [
+                    "'Save and Callback' button does not exist"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-98285",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The Date/Time of email list does not display as descending by default",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101280"
+                ],
+                "TestcaseError": [
+                    "Email Inbox is not default sorted by Date/Time"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-110796",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] The 'Call History' does not return a history of calls made by the agent",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101253"
+                ],
+                "TestcaseError": [
+                    "The 'Call History' doesn't have the calls previously requested in requirements"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-109249",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Productivity report is not updated after waiting for 15 minutes",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101276"
+                ],
+                "TestcaseError": [
+                    "Productivity report doesn't update data after 15 minutes instead of on the quarter hour"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-111492",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Server error when selecting 'Apply Options' button in Contact History page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101256"
+                ],
+                "TestcaseError": [
+                    "No element found using locator: By(xpath, //button[@id='btnApplyOptions_ShadowButton'])"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-111493",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-API] Internal server error with status code 500 is returned when calling the API 'GET v3.0/agents/performance' with valid information ",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101275"
+                ],
+                "TestcaseError": [
+                    "Status code does not match expected"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-111567",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Wrong contact refusal timeouts for voice mail in user contact settings",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101268",
+                    "IC-101272"
+                ],
+                "TestcaseError": [
+                    "The chat dialog does not close",
+                    "Email workspace doesn't display"
+                ]
+            }
+        ]
+    },
+    {
+        "BugIdJira": "IC-111613",
+        "BugIdTFS": "",
+        "BugDescription": "[TestAutomation][inC-UI] Server error page is displayed when selecting 'Run Report' button in Promise keeper  page",
+        "Data": [
+            {
+                "TestcaseID": [
+                    "IC-101271"
+                ],
+                "TestcaseError": [
+                    "No element found using locator: By(xpath, //input[@id='ctl00_ctl00_ctl00_BaseContent_ReportContent_reportViewerControl_ctl05_ctl03_ctl00"
+                ]
+            }
+        ]
+    }
+]

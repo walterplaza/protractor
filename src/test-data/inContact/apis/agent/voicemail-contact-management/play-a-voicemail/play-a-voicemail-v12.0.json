@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "AGV120014",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {
+                },
+                "QueryParams": {},
+                "BodyParams": {
+                    "playTimestamp": "true",
+                    "position": "0"
+                },
+                "Expected": {
+                    "statusCode": 202,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

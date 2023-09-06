@@ -1,0 +1,34 @@
+[
+    {
+        "Id": "RPV120010",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},
+                "QueryParams": {
+                    "startDate": "",
+                    "endDate": "",
+                    "updatedSince": "",
+                    "fields": "",
+                    "skip": "",
+                    "top": "",
+                    "orderby": "",
+                    "mediaTypeId":"",
+                    "campaignId": "",
+                    "teamId": "",
+                    "toAddr": "",
+                    "isLogged": "",
+                    "isRefused": "",
+                    "isTakeover": "",
+                    "tags": "",
+                    "analyticsProcessed": ""
+                },
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }
+        ]
+    }
+]

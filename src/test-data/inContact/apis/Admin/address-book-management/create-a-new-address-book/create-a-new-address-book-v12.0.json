@@ -1,0 +1,20 @@
+[
+    {
+        "Id": "ADV120002",
+        "Description": "with valid required information",
+        "Data": [
+            {
+                "PathParams": {},                               
+                "QueryParams": {
+                    "addressBookName":"Standard Address Book Test",
+                    "addressBookType":"Standard"
+                },                                   
+                "BodyParams": {},
+                "Expected": {
+                    "statusCode": 200,
+                    "statusDescription": "Success"
+                }
+            }            
+        ]
+    }
+]
